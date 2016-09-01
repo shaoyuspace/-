@@ -1,0 +1,75 @@
+\begin{thebibliography}{xx}
+
+\harvarditem{}{2013}{NiehJ}
+  \harvardyearleft 2013\harvardyearright .
+\newline\harvardurl{http://www.cs.columbia.edu/~nieh/teaching/e6998_s09/}
+
+\harvarditem{}{2014}{iosDeveloperLibray}
+  \harvardyearleft 2014\harvardyearright .
+\newline\harvardurl{https://developer.apple.com/library/ios/documentation/Miscellaneous/Conceptual/iPhoneOSTechOverview/iPhoneOSTechnologies/iPhoneOSTechnologies.html}
+
+\harvarditem{}{2015}{wiki}
+  \harvardyearleft 2015\harvardyearright .
+\newline\harvardurl{https://en.wiki2.org/wiki/Hansoft}
+
+\harvarditem{}{2016}{Wikipedia}
+  \harvardyearleft 2016\harvardyearright .
+\newline\harvardurl{https://en.wikipedia.org/wiki/Git_(software)}
+
+\harvarditem{Bae \harvardand\ Kim}{2014}{Bae:2014aa}
+Bae, J.-H. \harvardand\ Kim, S.-K.  \harvardyearleft 2014\harvardyearright ,
+  Research on educational use of smart-phone applications with smart clicker
+  technique, {\em in} `Advances in Computer Science and its Applications',
+  Springer, pp.~597--602.
+
+\harvarditem{Bryant}{2006}{Bryant:2006aa}
+Bryant, T.  \harvardyearleft 2006\harvardyearright , `Social software in
+  academia', {\em Educause quarterly} {\bf 29}(2),~61.
+
+\harvarditem{Goadrich \harvardand\ Rogers}{2011}{Goadrich:2011aa}
+Goadrich, M.~H. \harvardand\ Rogers, M.~P.  \harvardyearleft
+  2011\harvardyearright , `Smart smartphone development: ios versus android',
+  pp.~607--612.
+
+\harvarditem{Hrastinski \harvardand\ Aghaee}{2012}{Hrastinski:2012aa}
+Hrastinski, S. \harvardand\ Aghaee, N.~M.  \harvardyearleft
+  2012\harvardyearright , `How are campus students using social media to
+  support their studies? an explorative interview study', {\em Education and
+  Information Technologies} {\bf 17}(4),~451--464.
+
+\harvarditem{Kaplan \harvardand\ Haenlein}{2010}{Kaplan:2010aa}
+Kaplan, A.~M. \harvardand\ Haenlein, M.  \harvardyearleft 2010\harvardyearright
+  , `Users of the world, unite! the challenges and opportunities of social
+  media', {\em Business horizons} {\bf 53}(1),~59--68.
+
+\harvarditem[Laroche et~al.]{Laroche, Habibi \harvardand\
+  Richard}{2013}{Laroche:2013aa}
+Laroche, M., Habibi, M.~R. \harvardand\ Richard, M.-O.  \harvardyearleft
+  2013\harvardyearright , `To be or not to be in social media: How brand
+  loyalty is affected by social media?', {\em International Journal of
+  Information Management} {\bf 33}(1),~76--82.
+
+\harvarditem[Leonardi et~al.]{Leonardi, Huysman \harvardand\
+  Steinfield}{2013}{Leonardi:2013aa}
+Leonardi, P.~M., Huysman, M. \harvardand\ Steinfield, C.  \harvardyearleft
+  2013\harvardyearright , `Enterprise social media: Definition, history, and
+  prospects for the study of social technologies in organizations', {\em
+  Journal of Computer-Mediated Communication} {\bf 19}(1),~1--19.
+
+\harvarditem[Provasnik et~al.]{Provasnik, Kastberg, Ferraro, Lemanski, Roey
+  \harvardand\ Jenkins}{2012}{Provasnik:2012aa}
+Provasnik, S., Kastberg, D., Ferraro, D., Lemanski, N., Roey, S. \harvardand\
+  Jenkins, F.  \harvardyearleft 2012\harvardyearright , `Highlights from timss
+  2011: Mathematics and science achievement of us fourth-and eighth-grade
+  students in an international context. nces 2013-009.', {\em National Center
+  for Education Statistics} .
+
+\harvarditem[Werthmann et~al.]{Werthmann, Hund, Davi, Sadeghi \harvardand\
+  Holz}{2013}{Werthmann:2013aa}
+Werthmann, T., Hund, R., Davi, L., Sadeghi, A.-R. \harvardand\ Holz, T.
+  \harvardyearleft 2013\harvardyearright , Psios: bring your own privacy \&
+  security to ios devices, {\em in} `Proceedings of the 8th ACM SIGSAC
+  symposium on Information, computer and communications security', ACM,
+  pp.~13--24.
+
+\end{thebibliography}

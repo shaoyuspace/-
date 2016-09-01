@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Dissertation.aux
+The style file: agsm.bst
+Database file #1: baththesis.bib
+Warning--entry type for "wiki" isn't style-file defined
+--line 11 of file baththesis.bib
+Warning--entry type for "Wikipedia" isn't style-file defined
+--line 19 of file baththesis.bib
+Warning--entry type for "NiehJ" isn't style-file defined
+--line 28 of file baththesis.bib
+Warning--entry type for "iosDeveloperLibray" isn't style-file defined
+--line 47 of file baththesis.bib
+You've used 13 entries,
+            2909 wiz_defined-function locations,
+            723 strings with 7136 characters,
+and the built_in function-call counts, 44936 in all, are:
+= -- 7349
+> -- 597
+< -- 0
++ -- 3402
+- -- 182
+* -- 3847
+:= -- 8884
+add.period$ -- 13
+call.type$ -- 13
+change.case$ -- 158
+chr.to.int$ -- 13
+cite$ -- 13
+duplicate$ -- 220
+empty$ -- 423
+format.name$ -- 220
+if$ -- 8210
+int.to.chr$ -- 5
+int.to.str$ -- 0
+missing$ -- 9
+newline$ -- 46
+num.names$ -- 94
+pop$ -- 102
+preamble$ -- 1
+purify$ -- 175
+quote$ -- 0
+skip$ -- 195
+stack$ -- 0
+substring$ -- 10140
+swap$ -- 42
+text.length$ -- 142
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 52
+warning$ -- 0
+while$ -- 223
+width$ -- 0
+write$ -- 166
+(There were 4 warnings)

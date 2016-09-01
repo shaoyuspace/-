@@ -1,0 +1,61 @@
+CREATE TABLE `Bath_Inclass`.`Class` (
+  `Cid` INT NOT NULL AUTO_INCREMENT,
+  `Cname` VARCHAR(45) BINARY NULL,
+  `Ccode` VARCHAR(7) NULL,
+  `Year` VARCHAR(45) NULL,
+  PRIMARY KEY (`Cid`),
+  UNIQUE INDEX `Cid_UNIQUE` (`Cid` ASC));
+
+CREATE TABLE `Bath_Inclass`.`Year` (
+  `idYear` INT NOT NULL,
+  `Start` VARCHAR(45) NULL,
+  `End` VARCHAR(45) NULL,
+  `Year` VARCHAR(45) NULL,
+  PRIMARY KEY (`idYear`));
+
+CREATE TABLE `Bath_Inclass`.`TakeClass` (
+  `idTakeClass` AUTO_INCREMENT,
+  `uid` INT NOT NULL,
+  `cid` INT NOT NULL,
+  PRIMARY KEY (`idTakeClass`),
+FOREIGN KEY (`uid`) REFERENCES `User` (`Uid`)  ON DELETE CASCADE,
+FOREIGN KEY (`cid`) REFERENCES `Class` (`Cid`)  ON DELETE CASCADE,
+Unique Key(‘uid’,’cid’);
+
+CREATE TABLE `Bath_Inclass`.`ClassComment` (
+  `idClassComment` AUTO_INCREMENT,
+  `uid` INT NULL,
+  `cid` INT NULL,
+  `Comment` TEXT NOT NULL,
+  PRIMARY KEY (`idClassComment`),
+FOREIGN KEY (`uid`) REFERENCES `User` (`Uid`)  ON DELETE CASCADE,
+FOREIGN KEY (`cid`) REFERENCES `Class` (`Cid`)  ON DELETE CASCADE);
+
+
+CREATE TABLE `Bath_Inclass`.`Ument` (
+  `idUment` INT AUTO_INCREMENT,
+  `uid` INT NULL,
+  `content` TEXT NULL,
+  `date`DATE NULL,
+  
+  `pic` VARCHAR(1024) NOT NULL DEFAULT 0,
+FOREIGN KEY (`uid`) REFERENCES `User` (`Uid`)  ON DELETE CASCADE,
+  PRIMARY KEY (`idUment`));
+
+CREATE TABLE `Bath_Inclass`.`UmentLike` (
+  `idUmentLike` INT NOT NULL AUTO_INCREMENT,
+  `uid` INT NULL,
+  `umentid` INT NULL,
+FOREIGN KEY (`uid`) REFERENCES `User` (`Uid`)  ON DELETE CASCADE,
+FOREIGN KEY (`umentid`) REFERENCES `Ument` (`idUment`)  ON DELETE CASCADE,
+CONSTRAINT likeconstraint UNIQUE (uid,umentid),
+  PRIMARY KEY (`idUmentLike`));
+
+CREATE TABLE `Bath_Inclass`.`UmentComment` (
+  `idUmentComment` INT NOT NULL AUTO_INCREMENT,
+  `uid` INT NULL,
+  `umentid` INT NULL,
+  `comment` Text, 
+FOREIGN KEY (`uid`) REFERENCES `User` (`Uid`)  ON DELETE CASCADE,
+FOREIGN KEY (`umentid`) REFERENCES `Ument` (`idUment`)  ON DELETE CASCADE,
+  PRIMARY KEY (`idUmentComment`));

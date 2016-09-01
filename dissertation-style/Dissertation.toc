@@ -1,0 +1,107 @@
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}The Project's Goal}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}The Project’s Proposal}{1}{section.1.2}
+\contentsline {section}{\numberline {1.3}The Motivation for Project}{2}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Social Media’s Motivation}{2}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Application of Study’s Motivation. }{2}{subsection.1.3.2}
+\contentsline {section}{\numberline {1.4}Project's Objects}{2}{section.1.4}
+\contentsline {chapter}{\numberline {2}Literature Survey}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Project’s Background Literature Review}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Technology Literature review}{7}{section.2.2}
+\contentsline {chapter}{\numberline {3}Related Work}{10}{chapter.3}
+\contentsline {section}{\numberline {3.1}Responsibility/Tasks}{10}{section.3.1}
+\contentsline {section}{\numberline {3.2}Software Engineering Tools and Techniques}{11}{section.3.2}
+\contentsline {section}{\numberline {3.3}Test Design}{12}{section.3.3}
+\contentsline {section}{\numberline {3.4}Time Line}{12}{section.3.4}
+\contentsline {chapter}{\numberline {4}Requirements}{14}{chapter.4}
+\contentsline {section}{\numberline {4.1}Summary of the task}{14}{section.4.1}
+\contentsline {section}{\numberline {4.2}Requirements analysis}{14}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1} Stakeholder analysis}{14}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}User Interviews and Survey}{15}{subsection.4.2.2}
+\contentsline {subsubsection}{Interview Results}{15}{section*.8}
+\contentsline {subsubsection}{Survey details}{16}{section*.9}
+\contentsline {subsection}{\numberline {4.2.3}Joint Requirements Development (JRD) Sessions}{17}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4} Comparison with similar applications and websites}{18}{subsection.4.2.4}
+\contentsline {subsubsection}{Analysis of the current application and website}{18}{section*.10}
+\contentsline {subsubsection}{Strengths}{19}{section*.11}
+\contentsline {subsubsection}{Weaknesses}{19}{section*.12}
+\contentsline {subsection}{\numberline {4.2.5} Measurable goals}{20}{subsection.4.2.5}
+\contentsline {section}{\numberline {4.3}Use Case}{20}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Calendar Use Case}{20}{subsection.4.3.1}
+\contentsline {subsubsection}{Calendar-Display Reminder Class time}{20}{section*.13}
+\contentsline {subsubsection}{Class Calendar Add and Remove Class time}{21}{section*.14}
+\contentsline {subsubsection}{Class Calendar Check Class Information Detail}{22}{section*.15}
+\contentsline {subsubsection}{Class Calendar chat classmates}{22}{section*.16}
+\contentsline {subsection}{\numberline {4.3.2}Social Networking Use Case}{22}{subsection.4.3.2}
+\contentsline {subsubsection}{Social Networking Post Event}{22}{section*.17}
+\contentsline {subsubsection}{Social Networking Comment Event}{23}{section*.18}
+\contentsline {subsubsection}{Social Networking Like Event}{23}{section*.19}
+\contentsline {subsection}{\numberline {4.3.3}Chat Use Case}{24}{subsection.4.3.3}
+\contentsline {subsubsection}{Send and Receive New Message}{24}{section*.20}
+\contentsline {subsubsection}{Add New Chat }{25}{section*.21}
+\contentsline {subsubsection}{Delete Message Or Chat}{25}{section*.22}
+\contentsline {subsection}{\numberline {4.3.4}Setting Use Case}{25}{subsection.4.3.4}
+\contentsline {subsubsection}{Change Personal Information}{26}{section*.23}
+\contentsline {subsubsection}{Check My Class}{26}{section*.24}
+\contentsline {subsubsection}{Check My Event}{26}{section*.25}
+\contentsline {section}{\numberline {4.4} Requirements specification}{27}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}SRS Introduction}{27}{subsection.4.4.1}
+\contentsline {subsubsection}{Purpose }{27}{section*.26}
+\contentsline {subsubsection}{Scope}{27}{section*.27}
+\contentsline {subsection}{\numberline {4.4.2}Overall Description}{27}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}System Feature }{28}{subsection.4.4.3}
+\contentsline {section}{\numberline {4.5}Prototype}{29}{section.4.5}
+\contentsline {chapter}{\numberline {5}Overall Design}{33}{chapter.5}
+\contentsline {section}{\numberline {5.1}Architecture Design}{33}{section.5.1}
+\contentsline {subsubsection}{Login and Register }{33}{section*.28}
+\contentsline {subsubsection}{Login and Register }{35}{section*.29}
+\contentsline {subsubsection}{Social Media}{36}{section*.30}
+\contentsline {subsubsection}{Chat}{37}{section*.31}
+\contentsline {subsubsection}{Personal Information}{38}{section*.32}
+\contentsline {section}{\numberline {5.2}Design Pattern}{38}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}The Model}{39}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}The View}{39}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}The Controller}{39}{subsection.5.2.3}
+\contentsline {section}{\numberline {5.3}Data Design}{40}{section.5.3}
+\contentsline {subsubsection}{User Table}{40}{section*.33}
+\contentsline {subsubsection}{ClassTable}{41}{section*.34}
+\contentsline {subsubsection}{TakeClass Table}{42}{section*.35}
+\contentsline {subsubsection}{ClassComment}{43}{section*.36}
+\contentsline {subsubsection}{Ument Table}{43}{section*.37}
+\contentsline {subsubsection}{UmentComment Table}{44}{section*.38}
+\contentsline {subsubsection}{UmentLike Table}{44}{section*.39}
+\contentsline {section}{\numberline {5.4}Interface Design}{44}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Components}{44}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}View Design }{45}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Storyboard Design}{45}{subsection.5.4.3}
+\contentsline {chapter}{\numberline {6}Implementation and Testing}{47}{chapter.6}
+\contentsline {section}{\numberline {6.1}Server}{47}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Install Server And Mysql}{47}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Mysql Tables}{48}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Web Crawlers}{50}{subsection.6.1.3}
+\contentsline {subsection}{\numberline {6.1.4}PHP Interfaces}{52}{subsection.6.1.4}
+\contentsline {section}{\numberline {6.2}IMServer}{55}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Install SDK}{55}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Use IMServer}{55}{subsection.6.2.2}
+\contentsline {section}{\numberline {6.3}IOS Application}{57}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Data}{57}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Model}{58}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}View}{60}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.4}Controller}{61}{subsection.6.3.4}
+\contentsline {subsection}{\numberline {6.3.5}Implementation Difficult}{61}{subsection.6.3.5}
+\contentsline {section}{\numberline {6.4}System Test}{61}{section.6.4}
+\contentsline {chapter}{\numberline {7}Results}{64}{chapter.7}
+\contentsline {section}{\numberline {7.1}Mysql Check}{64}{section.7.1}
+\contentsline {section}{\numberline {7.2}Screenshot}{65}{section.7.2}
+\contentsline {chapter}{\numberline {8}Conclusions and Feature Work}{66}{chapter.8}
+\contentsline {section}{\numberline {8.1}Conclusions}{66}{section.8.1}
+\contentsline {section}{\numberline {8.2}Critical Evaluation}{67}{section.8.2}
+\contentsline {section}{\numberline {8.3}Feature Work}{67}{section.8.3}
+\contentsline {chapter}{\numberline {A}User Interviews and Survey}{68}{appendix.A}
+\contentsline {section}{\numberline {A.1}User Interviews }{68}{section.A.1}
+\contentsline {section}{\numberline {A.2}Interview Results}{71}{section.A.2}
+\contentsline {chapter}{\numberline {B}Design Diagrams}{73}{appendix.B}
+\contentsline {chapter}{\numberline {C}User Documentation}{74}{appendix.C}
+\contentsline {chapter}{\numberline {D}Raw results output}{75}{appendix.D}
+\contentsline {chapter}{\numberline {E}Code}{76}{appendix.E}
+\contentsline {section}{\numberline {E.1}File: yourCodeFile.java}{79}{section.E.1}

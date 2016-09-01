@@ -1,0 +1,14 @@
+\begin{table}[ht]
+\begin{center}
+\centering
+\label{my-label}
+\begin{tabular}{|c|c|c|}
+ \hline
+Name & Type & Extra \\ 
+ \hline
+
+ \hline
+ \end{tabular}
+\end{center}
+\caption{ }
+\end{table}

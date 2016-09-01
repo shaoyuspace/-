@@ -1,0 +1,1582 @@
+\documentclass[11pt,openright,a4paper]{report}
+
+%%
+%% This document template assumes you will use pdflatex.  If you are using
+%% latex and dvipdfm to translate to pdf, insert dvipdfm into the options.
+%%
+
+\include{DissertationDefs}    %% These are the includes required for the doc 
+
+
+\title{Your Dissertation title}
+\author{Your name}
+\date{MSc in INSERT COURSE TITLE\\The University of Bath\\Month YEAR}
+
+
+\begin{document}
+
+
+% Set this to the language you want to use in your code listings (if any)
+\lstset{language=Java,breaklines,breakatwhitespace,basicstyle=\small}
+
+
+\setcounter{page}{0}
+\pagenumbering{roman}
+
+
+\maketitle
+\newpage
+
+
+% Set this to the number of years consultation prohibition, or 0 if no limit
+\consultation{0}
+\newpage
+
+
+\declaration{Dissertation title}{Your name}
+\newpage
+
+
+\abstract
+Your abstract should appear here.  An abstract is a short
+paragraph describing the aims of the project, what was
+achieved and what contributions it has made.
+\newpage
+
+
+\tableofcontents
+\newpage
+\listoffigures
+\newpage
+\listoftables
+\newpage
+\lstlistoflistings
+\newpage
+
+\chapter*{Acknowledgements}
+Add any acknowledgements here.
+\newpage
+
+
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+
+
+\chapter{Introduction}
+\section{The Project's Goal}
+The idea came from my personal experience. As an international student, I found it difficult to meet new friends in class and around campus. For one group assignment, I posted a discussion on Moodle. However, I did not receive any replies. I feel that it is too difficult to find a partner on Moodle. Finally, I asked the teacher to help me find a partner for this assignment. Students need an application that connects them to their classmates. It should also help students to make more friends on campus or in classes. A number of students find it difficult to find interesting events. Since the website is official, public users are not allowed to post their ideas. Thus, students are not sharing their thoughts via the website. In addition, the purpose of the website is to provide information about the University of Bath to the general public rather than University of Bath students. Additionally, students are not informed via this website; rather, they are informed on social media websites and applications, such as Facebook, Twitter and Instagram, because they use these platforms more often than they use the website. Lastly is checking class information. Students only have one way to check class information online, and they only use “my timetable” to check class times. Most students still think this is not convenient. This project has three features that can help solve the above three convenience issues.
+\section{The Project’s Proposal}
+Have you ever been tired of visiting the University of Bath website to check out what events are taking place on campus? Have you ever felt that you need more friends to talk about homework with? Have you ever felt the limitations of using the Moodle system? Are you not a student? Are you looking for a place where you can post advertisements? Are you tired of waiting for an answer to what you posted? If so, then this research project has answers for you. Here is my project’s aim. The project is going to create an iOS app that resolves the above situations. It is called In Class of University of Bath. The aim of the research project is to help students answer all of the above questions.
+\section{The Motivation for Project}
+Campus life and studying for university students is the best life for a period of time. Partying, playing and attending lectures are necessary in order to enjoy campus life. In today’s information-explosion era, college students’ access to information channels is very extensive, so a good application is very important for students’ lives and studies on campus. For this project, social media and applications will help students to study.
+\subsection{Social Media’s Motivation}
+As of 2015, the online social-networking application Facebook registered about 1591 million monthly active users, and the numbers should increase in the future.\cite{Kaplan:2010aa} Now, the social media application or website is popular globally. More and more students want to use social media to connect with their classmates. It is clear that social media applications bring big opportunities to the whole world. Students need applications on campus. 
+\subsection{Application of Study’s Motivation. }
+Todd Bryant said that social software tools can support students and staff beyond the classroom, reaching around the world for learning and communication. \cite{Bryant:2006aa}. Considerable buzz has appeared on the Internet over a group of new tools labelled as “social software.” These tools can expand discussions beyond the classroom and provide new ways for students to collaborate \cite{Bryant:2006aa}. The project can provide two features in academia. The class information page is similar to the discussion page on the university’s Moodle. Students can add their own discussions for their class. Another feature is based on Ument. Students can know the academic activities of other students or official departments. 
+
+\section{Project's Objects}
+The idea is to create a social network application that helps people socialize in certain classes and enroll in classes etc. The application provides lists of classes for the University of Bath. Users can choose classes from the given list to import their class schedules into the application. After the class schedule is imported, the application will notify people to remind them class’s time and class’s information . For every class on the list, there are three main components: Class's timetable, Chat system and Class's comment.  Class's timetable lets users know the class's time. Chat system allows the user to chat with someone who takes the same class. Class comment is similar Moddle, it let users can comment who take this class. Some new features will be added later (for example, social networking, help-class rating etc.)
+\\
+\\
+Scheduler Requirements:
+This gives the scheduler to users to help them manage their schedule.The scheduler will support time/day reminders (notifications). Since this feature is connected to Ument, it interacts with Ument as well.
+\\
+\\
+Social Media Requirements:
+The name Ument stands for University Moment. Anyone who installs the app can see/write posts on it. Thus, this is a social media platform among all of the University of Bath students. An event will be posted as retrieved from the University of Bath website, so the student will pick this up every time he/she opens the app, INCLASS. As well, users can post an event, its time and location so the other users can let the event become his/her event in his/her schedule. It is an O2O (Online To Offline) service on campus. Convene can use the project’s Ument feature to post new activities. Convene can align everyone’s activities in a face-to-face manner; encouraging everyone back to reality, to make a real social event. It is better than sending posters on campus or posting new events on the Union websites. UMENT is more effective to check and send new activities. 
+Ument is not all about events. This is also a social media where users can post anything on their mind. Since the user is allowed to post a limited number of posts per a day, spam messages will be reduced by this limitation and a reporting system. On the business side, this gives companies opportunities to advertise their products to University of Bath students easily.
+It is similar but not exactly the same with Ument. It helps students in the same class contact each other. Each class gives the users the links to other students, so the user who wants to socialize with others can contact them. This features also provides a comment line. Thus, those students in the same class could simply discuss their ideas or questions.
+For the business side, if there is a certain textbook that students require, companies that offer it can simply post their details for the students to see.\\
+\\
+Student Information Requirements:
+This gives you the basic information of users: Classes users are taking and the year users are in (mostly academic information rather than private information) so users can communicate with others in those classes.
+\\
+\\
+Message System Requirements:
+As in our project’s proposal, it will help more students know other classmates. The messaging feature is necessary. Simple Messaging Application will be provided to let users communicate.
+
+\begin{table}[ht]
+\centering
+\label{my-label}
+ \begin{tabular}{|l|l|}
+ \hline
+Main Requirements& Description \\
+\hline
+Scheduler&Users can check class information, &&such as class time and location. &&Or, users can add personal time reminders. \\
+\hline
+Ument(Socila Media) & The name Ument stands for University Moment.&&This is the social media feature. &&Users can share any information and pictures on here. &&It is like a mini Facebook or Twitter. \\
+\hline
+Message & This is the messaging feature on the application. &&Users can use this to connect with other users. \\
+\hline
+Information Setting & This is personal information setting. &&Users can set their picture and name. &&Or users can check what classes they are taking.\\
+\hline
+\end{tabular}
+\caption{Main Object's Table }
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%2
+
+
+\chapter{Literature Survey}
+
+For this project, I completed a two-part literature review after meeting with my instructor. Since this project is for social media and the application is to help studying, First part is  made up of the projects background literature review.The projects background includes mobile applications to support studying and social media for students. Second part is Technology literature reviews focus on iOS development, social media design and database design. I found articles from ACM Digital Library and Google Scholar. Below is the literature review article tables.
+
+\section{Project’s Background Literature Review}
+Any Meeting Mobile Application System for Investigating Students’ Interaction
+\\
+Based on the motivation for this project and the literature surveyed, the main research 
+question is how to support students’ studies through a mobile application.In this era of rapid information and globalization, group discussion in class can tap into this ubiquitous, ever-available information about anything that is out there on the internet. Discussions have become a pivotal learning tool in academic institutions, providing students with an open forum for sharing knowledge and getting to know the opinions of their peers on matters of interest in a given subject area. In addition, students also get elaborate explanations on any incomprehensible encounters they have had from other informed students or even their teachers.
+Any Mobile seeks to make the discussion process easier for students by enabling them to have team discussions by simple manipulation during or outside of class. This Application not only livens up in-class conversations among students, it also helps them maintain a healthy communication with their instructor or tutor. This is critical given the typical class of today where the ratio of students to instructors/lecturers is one where the instructor serves tens of students at a time \cite{Provasnik:2012aa}.The need for an educational approach that redefines the classroom or lecture hall is one that is yet to be fully exploited or satisfied \cite{Bae:2014aa}. There is a need to make interactions in class merely a click away and in the process simplify inter-student communication and also make student-instructor communication easier. This research seeks answers to the question of how students can hold discussions with their peers or how to get clear, concise explanations from the teachers can be made easier and more helpful. Meeting Mobile application is a successful  example of study support. From this article, I know students need various kinds of application for studying.  Our project’s important purpose is to help students get more help from other classmates.  In this article, I learnt why Meeting Mobile application is successful; because the application means students are merely a click away from communication with other students, simplifying inter-student communication. After I read this article, I think connection should be important in this project. I added the message feature because of this. 
+\\
+\\
+Use of Social Media to Support Learning in Universities
+\\
+An overview of the motivation for the project is further described  through a review of 
+relevant literature, which will provide a background of how students currently use social media. University students use social media platforms such as YouTube, Wikipedia and Facebook for learning. These social media platforms provide effectiveness and efficiency in learning. For instance, students use social media to connect with fellow students and instructors \cite{Hrastinski:2012aa}. As such, students create social media groups that enable them to share learning content. Moreover, students share group assignments through social media groups. Through instant messaging, students cooperate to organize class meetings. Furthermore, the meetings provide an avenue for discussing assignments and other education materials. Thus, the use of social media enhances collaboration and teamwork among students and educators in universities.
+The majority of university students prefer instant messaging, e-mailing and the sharing of documents as compared to other social media. For instance, 70 percent of students use e-mail to receive and forward data. On the other hand, some students watch tutorials downloaded from YouTube for learning. However, a majority of them do not use social media platforms such as YouTube and Wikipedia for educational purposes. For instance, only about 10 percent of university students use YouTube as a tool for learning \cite{Hrastinski:2012aa}. Additionally, 10 percent of the university students use Wikipedia for retrieving information instead of creating educational content with their colleagues. On the other hand, a majority of students in universities use social media to share and connect with other students. However, only a small percentage of students connect with their educators through social media platforms. For instance, 15 percent of university students communicate with their instructors through emails. Interaction and coordination through social media is common amongst students. However, the above figures reflect student’s perceptions on the use of social media. Additionally, the research involved campus students, different from online learners who rarely meet with their instructors. In this regard, the research does not capture the perception of teachers and online learners. Therefore, future research should focus on teachers and students perception on the use of social media in different settings.
+The use of social media enhances communication and the sharing of educational content amongst students and educators. It facilitates learning in universities. However, social media presents some limitations in learning. For instance, students may focus on matters that do not relate to education, hence, spending time for studies in other matters. As such, only a small proportion of students would use social media for learning. However, the platform provides an efficient and reliable way of interacting and sharing useful class materials. Thus, instructors should encourage students to concentrate on educational matters while using social media platforms to enhance learning. This article helped me to understand how students choose to use social media, and how social media could help students. As the author said, instructors should encourage students to concentrate on educational matters while using social media platforms to enhance learning. This article is to help me know social media’s background and motivation for the project. 
+\\
+\\
+Users of the world, unite! The challenges and opportunities of Social Media
+\\
+Based on the motivation of this project and the literature surveyed, the main research question is as follows; why did I choose social media as a project? The existence of the social media as a modern day advancement in technology has been a concern not only for individuals but also for institutions. Everyone in society today seems to have their own understanding of what the social platforms are, the roles they play and the times when they should be used. According to Leonardi, Marleen and Charles \cite{Leonardi:2013aa}, the notion of social media is that it presents a wide range of platforms, all focusing on human interaction in different capacities. This interaction provides opportunities depending on what has been defined by Kaplan and Michael \cite{Kaplan:2010aa} as the five points of being social, since they allow one to have a greater reach. These are being active, being interesting, being humble, being unprofessional and employing honesty.
+Using social media has other rules should an individual decide to make use of the available opportunities and to realize their potential. Classic examples that have been documented are in regards to one’s area of expertise or one’s circles. In some professions, some individuals often opt to stick to a certain form of social platform. The US army has been documented by Kaplan and Michael to be using applications such as the Univision to the Hispanics, as opposed to Facebook; a platform that is much more popular and would be considered to have a greater reach.
+Social media, as most researchers note, presents a wide range of opportunities in different capacities, especially in the modern world where virtually every aspect today has to be done online. In previous centuries, the lack of proper awareness and information denied individuals and organizations a chance to be in the different markets and to borrow concepts within the right time. The existence of social media thus creates an avenue for both individuals and institutions to bridge such gaps and find ways in which they can better their existence through finding more opportunities \cite{Laroche:2013aa}.
+
+\section{Technology Literature review}
+PSiOS: Bring Your Own Privacy & Security to iOS Devices
+\\
+Apple iOS is one of the most popular mobile operating systems. As its core security technology, iOS provides application sandboxing but assigns a generic sandboxing profile to every third-party application. However, recent attacks and incidents with benign applications demonstrate that this design decision is vulnerable to crucial privacy and security breaches, allowing applications (either benign or malicious) to access contacts, photos and device IDs. Moreover, the dynamic character of iOS apps written in Objective-C renders the currently proposed static analysis tools less useful.\cite{Werthmann:2013aa} This article is good for learning about the IOS system. It helped me to learn what the iOS system is.
+\\
+Figure2-1 is a clear introduction to iOS software architecture. There are 4 layers of the iOS system. The first is application layer. It includes two parts: system apps and third-party apps. This project will fit in to this layer. Second is the Cocoa Touch layer. The Cocoa Touch layer works for objects that the application displays. The Cocoa Touch layer contains key frameworks for building iOS apps. These frameworks define the appearance of your app. They also provide the basic app infrastructure and support for key technologies such as multitasking, touch-based input, push notifications, and many high-level system services. When designing your apps, the developer should investigate the technologies in this layer first to see if they meet developer’s needs. \cite{iosDeveloperLibray}. On this project,the needs are Core Animation and Gesture Recognizers, to feature on this layer. Third is the core services layer. This layer is the core service of the iOS system, and it provides Phone, SMS, and Calendar services. The final layer is the Core OS layer. The Core OS layer (the iOS kernel) provides basic OS facilities such as a system call wrapper, device drivers and the file-system \cite{Werthmann:2013aa}. This project have a lot of Caches such as pictures. Caches can improve the speed of an application. The cache should be held on this layer(File System). There is also connection networking on this layer. 
+\begin{figure}[h]
+  \centering
+    \includegraphics[width=.8\linewidth]{images/ios_software-architecture.png}
+    \caption{
+           iOS Architecture \cite{Werthmann:2013aa}}
+\end{figure}
+\\
+The article Smart smartphone development: iOS versus Android
+\\
+Based on the motivation of this project and the literature surveyed, the main research question is as follows choose which smartphone development for this project.The article Smart smartphone development: iOS versus Android." by Goadrich, provides a comparison between Android and iOS, which are both popular programming platforms provided by Google and Apple. These two are just but among many platforms that have been made available in a technologically competitive market, where the technology needs of people are increasing. In developing these applications, expertise is required to ensure that the needs of the industry are satisfied. Through an examination of both iOS and Android, their differences can be identified, which enable the Computer Science faculties to make informed decisions on which platform to use in teaching development of applications. The connection is based on the requirements of the operating system, System Development Kits, and resources required for development, among other features.  
+Macintosh PCs that run on Mac OS X 10 are required for the development of iOS. The applications developed using these platforms are relatively small while they can easily run on slower processors. As such, the computers used do not have to be powerful \cite{NiehJ}. The development of iOS can be completed on computers without the need for other hardware, only requiring particular hardware such as iPhone, iPod, and iPad to test the usability of some applications. Acquisition of such devices could turn out to be expensive for the institution intending to use them. On the other hand, Android can be developed any operating system that is being used which as Windows, Mac OS X, and Linux. Therefore, unlike the iOS, Android is more flexible as no specialized hardware needs to be used. Emulators can be used to test the usability of the apps, making the testing hardware less valuable. Thus, Android is affordable for teaching purposes and thus recommended for Computer Science faculties \cite{Goadrich:2011aa}. 
+	Xcode is used to write iOS apps while coding, debugging and laying out the interface of the app is done using a modern IDE. Eclipse is the commonly used development environment for Android applications\cite{Goadrich:2011aa}. The iOS apps require Xcode layout while that of Android is based on XML files. Android uses various programming languages such as Java, Scripting, and LogoBlocks while iOS apps require Objective-C programming language. Both iOS and Android do not have textbooks that are readily available for use by educators and students. 
+
+
+\chapter{Related Work}
+\section{Responsibility/Tasks}
+This responsibility task table shows which Tasks for this project. 
+\begin{table}[h]
+\centering
+\label{my-label}
+ \begin{tabular}{|l|l|}
+\hline
+Component & Describe and Technologies \\
+\hline
+General GUI Design&Setting General Color. &&Such as background color.(Xcode)\\
+ \hline
+Login-Page&Implement Login page (Xcode Swift )\\
+\hline
+Register Page&Implement Register page(Xcode Swift)\\
+\hline
+Scheduler Page&Implement Scheduler page (Xcode Swift)\\
+\hline
+Class Information Page&Implement Class Information&& page (Xcode Swift)\\
+\hline
+Umet Page&Implement Ument page (Xcode Swift))\\
+\hline
+Message Page&Implement Message page (Xcode Swift)\\
+\hline
+Personal Information Page&Implement &&Personal information page (Xcode Swift)\\
+\hline
+Data Base	Implement & Database and local cache (Mysql, PhP)\\
+\hline
+Image Compressor&Implement compresspictures size&&(such as Ument’s picture and personal picture) &&to server.\\
+\hline
+Message connection &&(Send and Receive connection)&Implement message &&connection each users. (Xmpp, mysql)\\
+\hline
+Test&More details on 4.4  \\
+\hline
+\end{tabular}
+\caption{Tasks Table }
+\end{table}
+\section{Software Engineering Tools and Techniques}
+Software Engineering Methodology
+\\
+The software development process I have chosen to use is the Scrum methodology,
+which is an iterative and incremental framework for project management. In this model, work is divided into periods, called “sprints,” which are short units of development that are time-boxed such that the sprint must end on time. Each sprint identifies a specific task as the goal for the sprint, and this goal is confined in size so that it can be accomplished in the short period of a sprint. If the goal tasks are not completed for any reason, they are left out of the sprint and returned to a product backlog. Progress is measured through the product backlog and sprint burn-down charts. During each sprint, the amount of work left is plotted over time approaching zero such that by the end of the sprint, there should be no work left for the sprint. This also provides visualization of whether the project is moving at the necessary pace to finish by a deadline. In this way, becoming behind on the project can be immediately seen.
+\\
+Versioning - Github
+\\
+GitHub is a web-based Git repository hosting service. It offers all of the distributed revision control and source code management (SCM) functionality of Git, as well as adding its own features. \cite{Wikipedia}. Our project’s code will use Github’s repository to keep it. Github is good for updating or checking previous coding. Also, project files will not be lost using Github. If I delete one important file on a local computer, it should not be deleted on Github. Lastly, Github helps the features work. I hope for my project’s coding to be open source code. Anyone can download my code from Github. It will be good for a new version.  
+\\
+Project management -Hansoft
+\\
+Hansoft is software for team collaboration and management in software development. The tool is used for agile and lean development, Gantt scheduling, reporting, bug tracking / QA, workload coordination, portfolio and document management.\cite{wiki} Even though this project is undertaken individually, I still think project management software will be useful. I can set a time line or tasks and check my progress. It can improve development efficiency.
+\\
+Project development IDE -Xcode, Eclipse, Mysql workbench 
+\\
+For this project’s coding design, there is three parts: Firstly, the Client; that is the iOS system. I will use Xcode to write it. Xcode will be the IDE where all of my development work will take place. It is a full featured IDE that is integrated within OSX, which happens to be my development environment and the targeted platform for my initial release. There are many features that XCode provides which we plan on taking advantage of. These features range from profiling tools and GUI development tools to testing tools. The Server is the database for mysql. For mysql, I will use Mysql workbench to create a data table and manage all the data. The last part is Xmpp for Message connection. I will use Java code to write Xmpp on Eclipse.  Xcode,Eclipse and mysql workbench are three main IDEs for this project. 
+\\
+-Bug and Issue Tracking
+\\
+Along with feature tracking in Scrumworks, we will be tracking bugs using
+JIRA. This will allow me to separately track features that we would like to see in future iterations and bugs that are introduced along the way. Bugs can be assigned a priority ranging from crucial to slight modifications, and necessary bugs can be added to sprints to ensure their timely completion.
+Once the testing phase begins, user issues will also be tracked using JIRA. There will be a web interface in which users can submit bugs or feature requests. This will also be used after the product release because it is an improvement over the issue-tracking provided by the iTunes App Store.
+\section{Test Design}
+Throughout the development process I plan on creating various Unit Tests that can be run at any time to validate the code. I plan on looking into the possibility of creating a group of test cases that will be run on code automatically. I haven’t decided if this process will be one that is done at set intervals, like nightly on the code found in the repository, or if it will be some process that I need to manually run every so often. The user base of project is thought to be mainly University of Bath students. Therefore, we are seeking testers from this demographic. Through iTunes, I can provide the application to beta testers without making it public. This will allow me to test at a large scale early in the development process and introduce a thoroughly tested application into the iTunes App Store by the first launch date.
+ 
+\section{Time Line}
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[width=1\linewidth]{images/timeline.png}
+    \caption{
+           TimeLine}
+\end{figure}
+
+
+
+%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Requirements}
+The following chapter will describe and rationalise the software requirements analysis and specification. The main application for this is to help students check their scheduler, and it can extend to the campus social networking feature. Our application target users are international students from the University of Bath. 
+
+\section {Summary of the task}
+The task is to create a social network application that helps people in certain classes enroll and socialize etc. The application provides lists of classes at the University of Bath. Users can choose classes from the given list to import their class schedules into the application. After the class schedule is imported, the application will notify people to remind them of the class time and class information. The main idea is to help international students’ lives and studies.
+
+\section  {Requirements analysis}
+Analysis is critical to a successful application. We want to use analysis reports to encourage would-be stakeholders and demonstrate how our application is different from current, similar applications. Lastly, we want to know how to help our our application’s features improve users’ lives and studying. 
+
+\subsection{ Stakeholder analysis}
+The goal of our project is to improve University of Bath international students’ study and personal lives. As University of Bath international students are our target users, we think the University of Bath international office and University of Bath Union should be our stakeholders. Once we finish testing our application, we will transfer our operations to the University of Bath international office. We also want the University of Bath Union to register Bath Union official users. We hope the University of Bath Union will post updates about events on our social media. Our application is for public benefit and is free. We think our users should be the only ones who benefit from the application. This application is an individual project. Yu Shao is in charge of  purchasing and project management. All code is open source and available to the public on Github. Dr Alan Hayes is the project supervisor. He will monitor the progress and acceptance of the project. So far we have not received any personal or organizational objections. Yu Shao will finish designing and implementing all features of the app. Design and implementation details are discussed further in following chapters.  
+
+
+
+\subsection {User Interviews and Survey}
+
+For research, we used two methods to gauge users’ needs and advice. The first method interviewed University of Bath international students. They told us what features were important and useful in campus social networking for them. We think an interview is the most direct way to learn students’ needs. Another method used was a survey which designed common social networking questions for the University of Bath. We analyzed the results of the survey and found a lot of different students’ needs. We put the survey online using Google Forms and received 26 results. In the following sections are detailed analyses of the interview and survey results.
+
+\subsubsection {Interview Results}
+For this interview, we interview eight students. Seven students are currently International University of Bath students. One student is pre-University of Bath student. Each interview is about 5 minutes. And interviews purpose is about campus social networking and international students studying.\\
+Interview details is on the Appendix.\\
+From the interviews, we discovered the biggest problem facing international students is making friends on campus. They believe friends are important for their lives and can also help them studying. They identified that the most beneficial friendships are mostly with classmates. Increased connection and communication with classmates is a good idea since it can help them make new friends. Therefore, this should be the focus of our application. Our application can provide more than one useful way to help international students know or meet more classmates. Most interviewees also wanted to attend more activities. So social networking features should be added to our application. 
+Another focus is the design, which should incorporate GUI design and interaction. As one interviewee said, interaction can make all the other features come together. It can also encourage more international and UK students use the app. GUI design should allow ease of use for students, as pictures are better than words when teaching users how to use the app.
+The last focus should be on the data. A key point of our application is up-to-date and accurate information. Users can provide real data such as class information and class reviews. This data will attract more users to the app, who will in turn provide more data.
+\begin{figure}[ht]
+  \centering
+    \includegraphics[width=1\linewidth]{images/interview.png}
+    \caption{
+           InterviewResult}
+\end{figure}
+ 
+\subsubsection {Survey details}
+We  used Google Forms to publish our survey. We designed seven questions to ask international students. The survey can be found at the address below, and the questions followingly:\\
+\url{ https://docs.google.com/forms/d/e/1FAIpQLSeeezjFtkiRMwKkLVWpgxqcYHGNnT7rI0LpqiyEPXWACKP5tQ/viewform}
+
+1.What is your degree?\\
+2.Do you want to make more new friends on class?\\
+3.Do you like make more friends on camps?\\
+4.Have you feel fear to make UK friends?\\
+5.If you have some questions. who will you ask?\\
+6.Which one is you make new friends?\\
+7.Which one is you think is good way to make new friends?\\
+
+Our questions focused on finding out how international students would like to make new friends on campus, so that we could design the features of our project accordingly.
+The Survey result is on the Appendix.
+
+We received 21 responses for this survey. Below are the results:\\
+1.What is your degree?\\
+Most students were undergraduates, 38\% were master’s students, and only one PhD student responded to the survey. We think undergraduate and master’s international students will continue to be responsive to questions about social networking on campus and hope to hear more from them regarding their preferences for the project. \\
+2. Do you want to make more new friends on class?\\
+All students answered ‘yes,’ meaning our main idea is in line with their needs. Most international students are interested in making more friends in their classes. It can make life and studying more interesting. \\
+3. Do you like make more friends on camps?\\
+Most international students answered ‘yes,’ with 9.5\% answering ‘no.’ When asked why they would not like to make friends on campus, they responded by saying that it was difficult to make new friends on campus.\\
+4. Have you feel fear to make UK friends?\\
+Due to language and cultural differences, most international students are afraid to make friends with UK nationals. Our project is designed to overcome this problem and can help international students more confidently communicate with students from the UK. \\
+5. If you have some questions. who will you ask?\\
+More than half of the sample chose native friends. They believe it will be easier to communicate. 38\% of students responded that they would ask British friends for help, saying they think local friends will give better advice and answers. \\
+6. Which one is you make new friends?\\
+61\% of students chose classmates. This shows our project should focus on allowing students to become friends with their classmates. \\
+7. Which one is you think is good way to make new friends?\\
+48\% of students chose classmates, however 30\% thought sharing hobbies is also important to make new friends. Therefore, the same classes and also hobbies will be important considerations for our project’s features. \\
+
+ 
+\subsection {Joint Requirements Development (JRD) Sessions}
+Since this application is an individual project, we do not have any JRD sessions. As the project operator, Yu Shao will be meeting with Dr Alan Hayes to discuss the project’s progress once every two weeks. All code is public and updated on Github. This can help any future JRD work. 
+
+\subsection{ Comparison with similar applications and websites}
+The University of Bath already has some applications and websites to help studying become more convenient. This section will compare this application and website with our project. We believe this evaluating strengths and weaknesses in this way is important for the success of our project.
+
+\subsubsection {Analysis of the current application and website}
+The University of Bath my\_time website, Moodle page and Bath Uni application share some features with our project. We must admit they helped us with features such as the calendar and class information. They play an important digital role on campus. However, they are nonetheless functionally inadequate. We will analyse their problems in the following paragraphs.\\
+The Moodle page is popular, as is the official website of the University of Bath. Students can find all class information, submit work, share class news and receive feedback on Moodle. The Moodle page serves as a major e-learning and e-teaching website. It can directly receive class data from the University of Bath. As a  CAS system website, it provides a lot of security. We have to say the Moodle page is irreplaceable. However, we found some issues with the website. A lot of students like to use their phones to check class information, and we found that Moodle does not have an application, only a website, and it is not convenient to use on a phone. We found that the calendar feature is especially hard to use. Students cannot check when event or class times, and exporting the calendar does not work. Students can contribute to discussions on the Moodle page, but overall it lacks efficiency. Therefore, it is harder for students to meet or know classmates. \\
+The Bath my\_time website is the major website for informing students of class times and locations. It is very easy to use and can also connect to phone calendars, Google calendar, and Microsoft calendar. As a calendar, we think it is useful and convenient. Our project will also feature the ability to import students’ class times from this page. However, we think the website suffers from limitations. For example, students cannot find any more information on here, and they cannot use it to enter the class Moodle page. Furthermore, exporting  to phone only shows limited information.\\
+Bath Uni was designed and developed by Moke Phuycharoen. It has a 3D campus map to show class locations and also shows class times, while providing reminders for students before class. It ensures students are not late for class. However, there are still some problems that need fixing. The 3D campus map is not convenient for showing class location. Although it offers connection to Moodle, there will be an error on the page. This application cannot support any social networking on campus. In the app store reviews, one student points out that it does not work without WIFI. \\
+
+
+\subsubsection{Strengths}
+Our application’s main goal is to help international students to study and build their social network. It is easy to find a lot of applications and websites with the same goal. Below, I list the University website, Moodle, Facebook, and Twitter among them. In this section, I want to compare the listed websites and applications. 
+To begin, the timetable feature is likely to be the biggest strength of our website and application. Students can check their timetable on the university website, but it is not convenient. Students need to take a lot of steps to check it, and cannot see class information. Moodle, Facebook and Twitter do not have this feature. Our application gives users a scheduler to help them manage their affairs. The scheduler will support time/day reminders (notifications). Also, our application will use all class information is from the university website. Our application can ensure correctness of class information. Furthermore, our timetable is connected via the social networking feature and interacts with it. 
+Following on from that, very few students, if any, use the university website and Moodle to do social networking. Facebook and Twitter are popular social media for students. They have a lot of users. Users can easily access a lot of information on Facebook and Twitter. However, we found a lot of international students feel a strangeness for them, such as Chinese international students who did not use Facebook and Twitter in their country. I think our application’s biggest strengths are its focus on the Bath campus and how it can help international students meet more classmates. The social media feature on our application is called Ument, which stands for University Moment. Users can share information and pictures on here. 
+The final strength is class reviews. Student can check class information on the University website, and they also can ask other students for class reviews via Facebook and Twitter. Our application provides a feature that allows users to leave comments on a class’ information page. It can help international students choose a suitable class. 
+
+\subsubsection{Weaknesses}
+Our project still has a few weaknesses. As we know, social networking applications are popular now. Facebook, Twitter and Instagram have enormous numbers of of users. As of 2015, the online social-networking application Facebook registered about 1591 million monthly active users, and the numbers are expected to increase in the future. The number of users is potentially a big problem for our project. Our project cannot receive large quantities of data from users if we cannot convince many to register and actively use the application. Although our project is only focused on the University of Bath campus, active users can give more correct data, such as class reviews, or help international students meet more people. Some interviewees also pointed out that they worried about our project not having a lot of users and being unable to get more useful information. Therefore, I think the number of users is one of the biggest challenges to face at the start of the project. 
+Another weakness is the exclusive iOS support of the application. We have to admit that there are more choices of operating system: Google’s Android, Microsoft’s Windows Mobile, NOKIA’s Symbian OS, RIM’s BlackBerry, etc. However, due to time constraints, we cannot develop the app for other platforms, although our server design can support all  platforms. This can help develop our app forother platforms in the future.  
+
+Furthermore, our application cannot support one-click adding of class. On the university website, students can use one-click to check all class information. For example, students can search their major’s name and degree, then they can see all the class information. On the other hand, the database design of our application only allows students to add classes one by one. Only when a student has searched a class’s code or name can they then  add it to their timetable. 
+The final weakness is bugs that need fixing. Due to  iTunes’s rules, iOS application bug fixing is harder than on other applications. Another point is our team cannot fix small bugs in the nick of time. This is a greater weakness than affects other social media websites or applications, so a strong design at the outset is necessary to reduce the number of bugs. There should also be rigorous testing before publication.
+
+\subsection{ Measurable goals}
+
+We think our project’s measurable goals should be divided into three separate goals all relating to the development stage. The first goal is to finish all feature, interaction and server work. This goal is needed in order to test all features and check that the server works in accordance with our design. We need to test all features are working  without any big crashes. The second goal is to accomplish reasonable GUI and user experience. We should test all features to ensure Gui and user experience is working and no crashes happen. The final goal is completion of our project’s public test. We should be prove version 1.0 is well received in the public test and receive more responses for version 2.0. More discussion of future work on the project can be seen in the future work chapter. 
+\end{section}
+
+
+
+\section {Use Case}
+\subsection{Calendar Use Case}
+ \begin{figure}[ht]
+  \centering
+    \includegraphics[width=.4\linewidth]{images/cusecase.png}
+    \caption{
+           Calendar Usecase}
+\end{figure}
+
+\subsubsection{Calendar-Display Reminder Class time}
+Brief Description: Class calendar will display class time and location after user login to our application. It is display weekly calendar to show your class. It is very easy which class is start and end. User can change any date to check class time. \\
+Actors: User\\
+Preconditions: User have to login or register to our application. And User’s have to add their class to application(More details on add class time use case).\\
+Basic Flow: User login or register to our application. It will pop an dialog box to show “welcome to login our application”. Then user click Ok button or wait 3 seconds. Screen will show user’s current  weekly calendar which include user’s class time and location. User can click < or > Button to change last week or next week. User also can click date title "2015-01-01", application will pop one date picker to choose any week who want to display. \\
+Alternate Flows: User change new phone to use application. it need some time to download class time.\\
+Exception Flows:User is first to login to application will not display class time until user add class information to application. Or application do not display without empty user’s class time. 
+Post Conditions: Application will display current week class information without errors.\\
+\subsubsection{Class Calendar Add and Remove Class time}
+Brief Description: User can add and remove class time on this use case.\\
+Preconditions: User have to login or register to our application. And the main screen should be on the Class time table page.\\ 
+Basic Flow: Touching(+) button on the front page. Then the interface will transfer to Add and Remove class page. User click by iPhone button to add class, then wait application handle data and connection server. User click remove button to remove class, then wait application handle data
+and connection server.\\ 
+Alternate Flows: If user already have class data. Then application will pop one dialog to ask user want to update new class time. If click yes, wait application handle data and connection server. if no, application do noting.\\ 
+Exception Flows: Add class time without networking, then application do noting. and pop dialog error message. Remove class time without data information, then application do noting, and pop dialog error message.\\
+Post Conditions: User already add class time, the page will transfer to previous page. And timetable will show class time. User already remove class time, the page will stay on current page. User can choose add new class time and click navigation back button to return. \\
+\subsubsection{Class Calendar Check Class Information Detail}
+Brief Description: This use case will describe user how to check class details\\
+Preconditions: User have to login or register to our application. And the main screen should be on the Class time table page.\\ 
+Basic Flow: User can click class button on the calendar. then page will transfer to class information page. User can check class’s classmates, class’s discussion, and more details on this page.
+Alternate Flows: User can go to Setting page to find my class, then user can enter to class information page.\\
+Exception Flows:Application running with poor networking or without networking. Classmates details and class discussion will display slow or empty.\\
+Post Conditions: All class information will display on this page.\\ 
+\subsubsection{Class Calendar chat classmates}
+Brief Description: User can find class’s classmates on class information page. Then user can chat with them\\ 
+Actors: User and other classmates\\
+Preconditions: User have to on the class information page.\\
+Basic Flow: User can find classmates’s name and picture. then user can click picture. The page will transfer to classmates information page. User can click chat button and chat with them.\\
+Alternate Flows: User can use message page to chat with them, more details message part.\\ 
+Exception Flows:Network is poor and disconnect, the application will dialog and page will show error message. When network is good, user can send message to classmates again.\\ 
+Post Conditions: User sen message is successful. and page is stay chat room.  \\
+
+\subsection{Social Networking Use Case}
+ \begin{figure}[!htb]
+  \centering
+    \includegraphics[width=.4\linewidth]{images/uusecase.png}
+    \caption{
+           Social Networking Use Case}
+\end{figure}
+
+\subsubsection{Social Networking Post Event}
+Brief Description: User can share or post any event on our application’s social networking feature. This use case will show user how to post event on Ument.\\
+Preconditions: User have to change screen to Ument page. And phone need good networking. User want to add picture to event, it need allow application visit phone’s photo gallery\\
+Actors: User\\
+Basic Flow: User can click Add button. and the screen will change to Post event page. User can add some words on content. Or user can choose one picture from photo gallery.\\
+Alternate Flows:No\\
+Exception Flows: User want to add picture and do not allow visit photo gallery. User need to device’s setting to change access. \\
+Post Conditions: Application will show one dialog to show you post successful. And page will transfer to Ument page. User can find this event.  
+\subsubsection{Social Networking Comment Event}
+Brief Description: User can read and comment he or she think interesting event. This use case will show how to comment event. \\
+Preconditions: User have to change screen to Ument page. And phone need good networking.\\
+Actors: User other users\\
+Basic Flow: User can find one event on Ument display. He or she click comment button. Then page will change to event comment page. User input comment for this event\\
+Alternate Flows: User can click one event. Display will change to details for this event. User can find comment button. Then, the page will transfer to event comment page. User input comment for this event.\\
+Exception Flows: No.\\
+Post Conditions: Application will show one dialog to show you comment successful. Page will stay on event comment page. User can find this comment. \\
+\subsubsection{Social Networking Like Event}
+Brief Description: User can read and like he or she think interesting event. This use case will show how to like event. \\
+Preconditions:User have to change screen to Ument page. And phone need good networking.\\
+Actors: User
+Basic Flow: User can find one event on Ument display. He or she click Like button. \\
+Alternate Flows:User can click one event. Display will change to details for this event. User can click like button.\\
+Exception Flows: No\\
+Post Conditions: Like Button will change color and unclickable. User can find the number of like will be increase 1.\\
+
+\subsection{Chat Use Case}
+ \begin{figure}[!htb]
+  \centering
+    \includegraphics[width=.4\linewidth]{images/ccusecase.png}
+    \caption{
+           Chat Use Case}
+\end{figure}
+
+\subsubsection{Send and Receive New Message}
+Brief Description: User send and receive new message from other users (such as classmates). 
+Preconditions: User have to login application. \\
+Actors: Users and other users \\
+Basic Flow: Receive new message, the tab bar will show number of new message. User go to chat page, he or she can find new message. Send new message, user can go to chat page, then click message item to chat room send new message.  \\
+Alternate Flows: No\\
+Exception Flows: Networking is disconnector unavailable. The top of chat page will display is not woking. \\
+Post Conditions: Chat room display you send message without any errors. Or user see immediately new message on chat page.\\
+
+\subsubsection{Add New Chat }
+Brief Description: User can add new chat on application, build new chat with other users.\\ 
+Preconditions: User have to login application. \\
+Actors: User and other users\\
+Basic Flow: User go to other user information page. Then user can click chat button on this page\\
+Alternate Flows: No\\
+Exception Flows: Networking is disconnector unavailable. The top of chat page will display is not woking. \\
+Post Conditions: User build new chat room for other users.\\
+
+
+\subsubsection{Delete Message Or Chat}
+Brief Description: User choose any message or chat to delete.\\
+Preconditions: User have to login application. \\
+Actors: User\\
+Basic Flow: User go to chat page, and swiping right chat item. User can long press any message item on chat room\\
+Alternate Flows: No \\
+Exception Flows:Networking is disconnector unavailable. The top of chat page will display is not woking. \\
+Post Conditions: Chat or message will remove from chat list or message list.
+
+\subsection{Setting Use Case}
+ \begin{figure}[!htb]
+  \centering
+    \includegraphics[width=.4\linewidth]{images/susecase.png}
+    \caption{
+           Setting Use Case}
+\end{figure}
+
+\subsubsection{Change Personal Information}
+Brief Description: User change his or her information details. Such as username, photo, and birth date. This use case show how to change it.\\
+Preconditions:User have to change screen to Setting page. And phone need good networking.\\
+Actors:User\\
+Basic Flow:User click edit button, then user change who want to edit details. Last user click save button. \\
+Alternate Flows:No\\
+Exception Flows: Network is not good, save will be not successful. 
+Post Conditions: Application will pop one dialog to show you are successful to change details.\\ 
+
+
+\subsubsection{Check My Class}
+Brief Description: User can check who added all classes. 
+Preconditions:User have to change screen to Setting page. And phone need good networking.\\
+Actors:User\\
+Basic Flow:User click my class button.\\
+Alternate Flows: User can click class button on timetable page.(More details is on the calendar use case).\\
+Exception Flows:No\\
+Post Conditions: All class information will display on the list\\
+
+\subsubsection{Check My Event}
+Brief Description: User can check who post all event 
+Preconditions:User have to change screen to Setting page. And phone need good networking.\\
+Actors:User\\
+Basic Flow:User click my event button.\\
+Alternate Flows:No\\
+Exception Flows:No\\
+Post Conditions: All event will display on the list\\
+
+
+
+
+\section{ Requirements specification}
+\subsection{SRS Introduction}
+\subsubsection{Purpose }
+Our project’s purpose is to develop one iOS application to help University of Bath international students network on campus. Our application’s name is InClass. The software requirement specification will discuss application version 1.0 and the development of this application. It is also a guide for development. For version 1.0, our application should be complete, with all features included, and run without any crashes.
+
+\subsubsection{Scope}
+The application is to use University of Bath class information to help international students make new friends in the same classes. Another purpose is to build campus social media to help international students explore more interesting events or hear about campus news. Thus, our application needs one database server to keep all data. Our application also needs one IM server to help users chat. Lastly, our project is designed to help users get all correct class information from the University of Bath. More design details are described in the Design chapter. 
+
+
+\subsection {Overall Description}
+-User Interface\\
+As an iOS application, our project’s GUI design should adapt to different sized devices. User interfaces are key for user experience. Good user interface design and implementation lets users feel at ease using the application. The device’s keyboard is displayed when users wish to input text, and the keyboard should be hidden when the input is finished. All error messages should be set to alert the user. Further GUI design details are described in the Design chapter. \\
+
+-Hardware Interfaces\\
+Our application is for iPhone 4s, iPhone5, iPhone 5s, iPhone 6, iPhone 6s, iPhone 6plus, iPhone 6s plus, and iPhone SE. Devices should support the use of networking. Our project is without any hardware interface. \\
+
+-Software Interfaces\\
+Our application allows CocoaPods open source. CocoaPods is an application level dependency manager for the Objective-C, Swift and any other languages that run on the Objective-C runtime, such as RubyMotion[rubymotion]. Also, an application database should be installed on the server. The application sends post requests to php files and receives data. The entire database is operated by PHP. Then PHP sends Json format back. IM server should support users to send text and voice messages, as well as pictures. More details follow in the design chapter.  \\
+
+
+
+\subsection{System Feature }
+-Scheduler
+\\
+The scheduler is a table that holds events and class schedules. Users are allowed also to type their individual events to the scheduler. The data will be saved in the database so if the user logs in using same id on a different IOS application, the data will be extracted to the machine. The reason why we are not going with having connections to both Facebook’s scheduler and the Google scheduler is because we want to give users privacy outside of social media. Thus, events related to campus life will be separately managed with this application.
+For classes which are drawn on the scheduler, users can click and link to the class information page and see the information about the class and comments on the class. On the class information page, users can post their thoughts and communicate with other classmates. The purpose of the comment system is to let users communicate other than just letting users evaluate the class. 
+\\
+-Ument
+\\
+ Ument is the actual social media part where users can write their thoughts and events. There will be two types of event: One is posted by staff and another is posted by student users. If authorized staff post an event, the event will be shown at the top of Ument so users can see easily what event the University of Bath is holding. The second, the post that normal users post, are most likely a private or small event that an individual or a small group is holding. \\
+ -Class information page
+ \\
+The class information page shows details for this class. A user can add their class and it will go on the class information page. Alternatively, a user can check the scheduler for their class information page. The class information page provides students and comments for the class. Users that added this class can add some comments here, such as looking for colleagues for group. It is good for the project’s purpose; social media to help studying. 
+\\
+-Personal Information Page / Sign Up
+\\
+ Information pages include users’ personal information. When users sign  up for the application, they need to fill out the information form - name, Bath-email, date of birth and sex. The reason why users have to provide their Bath-email is due to the verification which is going to help deal with spam. By checking their Bath-email , the app recognizes if the user is proper or if it’s private companies which could possibly post spam.
+This information page will show the personal (but not private) information of a user, showing users’ names, birthdays, sex and classes that users are currently taking. It will not show their Bath-email. The reason why Bath-email is withheld is due to the fact that we want to give users privacy. Again, the purpose of requesting users to type Bath-email is in order to verify the user.
+\\
+-Message 
+\\
+Messaging is an important feature for projects. A user can use it to easily chat with their friends or classmates. It only allows users enter words, because the message part is not the main feature of the project. Message is only for connecting with others on this project. 
+
+\section{Prototype}
+\begin{figure}[h]
+  \centering
+    \includegraphics[width=.4\linewidth]{images/Schlduler.png}
+  \caption{\label{fig:all}
+           Prototype Scheduler Page.}
+\end{figure}
+\begin{figure}[h]
+  \centering
+    \includegraphics[width=.4\linewidth]{images/Ument1.png}
+  \caption{\label{fig:all}
+         Prototype  Ument Page.}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[width=.4\linewidth]{images/Message.png}
+  \caption{\label{fig:all}
+          Prototype Message Page.}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[width=.4\linewidth]{images/Personal.png}
+  \caption{\label{fig:all}
+           Prototype Personal Page.}
+\end{figure}
+
+
+
+
+\chapter{Overall Design}
+In the following chapter, This is project overall design part. On this part, the project’s architecture design, data design, interface design, and test design will be described. The overall design is the help to plan implementation. The design is a conceptualization of a design subject (the system under design or software under design) that embodies its essential characteristics; demonstrates a means to fulfil its requirements; serves as a basis for analysis and evaluation and can be used to guide its implementation.[IEEE 1016]. The overall design is according to the last chapter(Software requirement) to write. 
+
+\section{Architecture Design}
+\begin{figure}[ht]
+  \centering
+    \includegraphics[width=.7\linewidth]{images/All.png}
+    \caption{
+          Architecture All System }
+\end{figure}
+System Architecture picture shows application system. The application needs to connect Server and IM server for this system. The server should be implemented MySQL database and PHP. Application connection the server use post request to PHP. POST requests have no restrictions on data length.(W3 school). Post request also can against use web page to get data information. And PHP sends JSON data back. Or the application need to upload or download the file to the server(such as photo etc.). The design also to consider the application’s efficiency because the devices' networking use the wireless that is not reliable networking. So the design must use local cache on the large data.The IM server is an independent to handle application’s connection. The application uses SDK to connection the IM server.  And The system also needs to import the data from University Bath Website. The project is designed to use web crawlers technology to implement it. 
+
+\subsubsection{Login and Register }
+\begin{figure}[ht]
+  \centering
+    \includegraphics[width=.7\linewidth]{images/Login.png}
+    \caption{
+          Login and Register }
+\end{figure}
+On the beginning, we will describe the login and register on the architecture system users need to login or register to the application to use. We do not apply to our application to connection database directly because PHP as transmission layer can protect MySQL database. If we add database’s username and password to application source code, Hacker can open the source to find the database’s username and password. It is Insecurity for user’s data. Another reason this method is not needed high-quality network because all SQL query function is on the server.
+For register, application need user submits register for login information ( Email, password ). The application will check the input specification; then the application will send information on web request to server’s PHP file. The PHP file can use SQL query to check database if this is an existent E-mail because the E-mail is unique key on the table. The application must check the E-mail is not use before.The database will give the result to PHP. Then PHP will pass the JSON result to the application. If the result is existing E-mail, the application will need to show the result to the user to let the user choose other E-mail to register. If the result is not existing E-mail, User needs to fill more detail user’s information to register. After finish input, the application also needs to check data specification. The application sends the web request to PHP. The PHP will add the user information to the User table.  Then the database will return the result to show add is successful. Last the PHP will send JSON(user id ) to the application. Because the application all ready to check input specification and application has been to know the E-mail does not exist, the register should not happen any errors. The particular situation will make the register happen error that is two devices use same E-mail to register same time. Because the E-mail is Unique Key on the table, so the add query was maybe not successful. But the PHP will catch error message to the application; then the application can handle the errors. The application will make the user choose other E-mail to register. 
+Then the login is simple in the architecture. The application needs the user to input E-mail and password. When the user finishes input, the application needs to check data specification. Then the application sends post request on server’s PHP file. The PHP file will use check query to check if match Email and password. Php file will send user id as JSON back when E-mail and password match. Or PHP will send back the error message to let application to handle it. The error messages are E-mail not matched password, or the E-mail is not registered. The application will show dialogue message to the user. 
+
+\subsubsection{Login and Register }
+\begin{figure}[ht]
+  \centering
+    \includegraphics[width=.7\linewidth]{images/TimeTable.png}
+    \caption{
+          TimeTable }
+\end{figure}
+Timetable feature is the project’s the most important feature. For the project’s retirement, the application must use the real and correct data from the University of Bath. However, University of Bath does not have any API to support export the data. This architecture design is quite difficult because the project should use devices data, University of Bath class website, server’s storage and server’s MySQL database. And the design also uses the local cache to help application reduce the error to connect networking. 
+
+On the first, it will describe the application how to get class’s time. Because University of Bath class data does not have API to export students' class time, the project is designed to use connected calendar app feature of University of Bath Timetable website to get class time. (). The design is to subscribe student’s time from my time page to devices' calendar. The last user can use the application to import data from deceives’s calendar. So this is how to get student’s class’s time.
+
+Then, it will describe the application to save the class data and how to get class’s time that already to add to user’s application. The design has three things to keep data. When the user adds class’s time to application, the application needs to upload the class time file to the server. The reason is users can use another device to synchronisation their class time. Then the application need to add the class id (such as CM50123 )to the database. The project design uses one table to keep users and their class id. The reason is for the application can use a Mysql query to check who take this class. And the class time only limits the information that are class id, class time, and location. It is not enough to display on the class’s information page. The design also can user server’s data to find more information on this class(Such as class name and more).Last, the application need to save the class time file on the catch file. When the user log-in again, the application can use the catch file to get class time. It does not need to download from the server that is useful for devices running speed. 
+
+Another is user can use time table to enter class information page. The server’s database is all ready to add class information (such as name and more). The project to use the web crawler to download data from University of Bath class information page. The data use the class id to key on the server’s database table. When the user to enter class information page, the application needs to send the post request to get classmates on the user’s class table, get more information on the class information table, and get comments from class’s comments table. Last user can open the class’s detail page for the application to know more information().
+
+\subsubsection{Social Media}
+\begin{figure}[ht]
+  \centering
+    \includegraphics[width=.7\linewidth]{images/Ument.png}
+    \caption{
+          Ument }
+\end{figure}
+The social media design is easier than timetable design. The Social Media 's feature is sending and get every Ument . The user sends Ument. It will add the Ument information on the MySQL table (such as Ument’s username, Ument’s date, Ument’s content, and more). The add way is similar other feature. It also uses to ask web request to the PhP. The social media is also allowed user can add one picture on the Ument. The picture will be upload to the server. The MySQL table will get the picture’s file name. When Social media is load, the Ument is to get all information from the server’s table. And the Ument is download picture is from the server. The pictures will be designed use catch on the local file. It can help to increase the Ument’s load speed. 
+
+\subsubsection{Chat}
+\begin{figure}[ht]
+  \centering
+    \includegraphics[width=.7\linewidth]{images/Chat.png}
+    \caption{
+          Chat }
+\end{figure}
+The chat feature will design to use the server and IM server. IM server is a  Rong Cloud Server. Every user need IM server token to use it. When user to register, the token will add to the user information.The application must install the Rong Cloud SDK to use it. And more implementation detail is in the implementation chapter. Rong Cloud can help  App without changing the existing structure, the code directly into an existing framework; App Server without changing the existing architecture, independence for the deployment of a user can be authorized Service;The ability to focus on providing communications using proprietary binary protocol, message light, orderly, do not lose the message;Secure authentication and authorization, without having to worry about capacity misuse SDK (identity theft spam, spam mass) problem.[Rong Cloud Sdk]. The application needs to get user’s data(such as username, user id, and more) from server’s MySQL. And the IM server handles to help to build communication and transfer message.  
+
+\subsubsection{Personal Information}
+\begin{figure}[ht]
+  \centering
+    \includegraphics[width=.7\linewidth]{images/Me.png}
+    \caption{
+          Personal Information }
+\end{figure}
+The personal information main feature is help user to read/edit user information by user ids such as edit user’s picture, username, class list and more. Because our application does not requirement user register to upload a picture, the user can use personal user information to upload a picture. Except user’s picture, User read or edit user’s information by send web requests to Server’s PHP. The picture needs to update picture’s file name to user’s table and upload to the Server. The project design uses async upload the picture. Until the application finish upload, the application updates picture’s name. It avoids can not find the picture on the Server because upload maybe happens unsuccessfully. The personal information also uses to check other’s user information. It is only can read information by user id. 
+
+\section{Design Pattern}
+\begin{figure}[ht]
+  \centering
+    \includegraphics[width=.7\linewidth]{images/MVC.png}
+    \caption{
+          MVC Pattern }
+\end{figure}
+Swift’s primary design pattern is MVC design pattern. Our project plan uses the MVC pattern(Model-View-Controller). The reason behind this is to ensure that critical parts of the application could be portable and stable during events like platform updates or changes to XCode or the changes in project environments.
+[CashTag iOS Application]
+\subsection{The Model}
+The Model’s primary objective to hold all of the application’s business logic. It means that the core of what is actually happening in the application belongs to the Model.[CashTag iOS Application]. Our project model is to help to connection server and IM server. The primary method is post web request and load/down load file. The model’s another thing is to manage local Cache and file. The model will get JSON data and file that to past to the Controller.
+\subsection{The View}
+The View is where all user?viewable related objects and items are handled. This means the navigation bar in the top of screen, “back” button, textfields, labels, maps, etc. all belong under the view. Swift helps abstract this portion of MVC by keeping these objects in XCode’s “Storyboard”.[CashTag iOS Application]. The View design and Storyboard design is on the interface design section. 
+\subsection{The Controller}
+The Controller is the bridge between the Model and View. This allows communication to flow between the other two sections which otherwise have no means of communication.[CashTag iOS Application]. The Controller is to help handle data to update on the GUI. Or it can get action from view to update on the Model. 
+
+\section{Data Design}
+This section is the project’s data design. The project’s data has three different kind of data. First, the picture data is store on the server’s storage and local cache. The picture data is use on the user’s photo and Ument’s picture. The picture data is png file.  Second is the class time data. The class time data is use store class time. The application import the data from the website and save on the server and local cache. The file is plist file. Property lists organize data into named values and lists of values using several object types. These types give you the means to produce data that is meaningfully structured, transportable, storable, and accessible, but still as efficient as possible. Property lists are frequently used by applications running on both OS X and iOS. The property-list programming interfaces for Cocoa and Core Foundation allow you to convert hierarchically structured combinations of these basic types of objects to and from standard XML. You can save the XML data to disk and later use it to reconstruct the original objects.(Picture)(developer.apple.com). Last is application’s information is  mysql data. Mysql data store all application ’s information. Such as User information, Class Information and more. Below is Mysql table details. 
+\begin{figure}[ht]
+  \centering
+    \includegraphics[width=1\linewidth]{images/loginc.png}
+    \caption{
+          Tables Logic }
+\end{figure}
+\subsubsection{User Table}
+%%%%%%%%%%%%%UserTable
+\begin{table}[ht]
+\begin{center}
+\centering
+\label{my-label}
+\begin{tabular}{|c|c|c|}
+ \hline
+Name & Type & Extra \\ 
+ \hline
+  Uid       & int(11)  &  Key, Auto increment \\
+  Email     & varchar(45) & \\
+  Password  & varchar(45) &  \\
+  Gender    & varchar(1) &  \\
+  Realname  & varchar(45) &  \\
+  BDate     & varchar(10) & \\
+  Username  & varchar(45) & \\
+  Pic       & varchar(1024)& \\
+  Token     & varchar(256) &\\
+  Timetable & int(11) &\\
+ \hline
+ \end{tabular}
+\end{center}
+\caption{User Table}
+\end{table}
+
+The table is to store user’s personal information. \\
+Uid is Key on the table. It is unique on the table. Project search all user information by Uid. It is auto to increment. \\
+Email is unique on the table. It keeps user’s Email. One Email only registers once. It is used application’s login and register. \\
+Password keeps user’s password. It is used application’s login and register. \\
+Gender keeps user’s gender. It is user’s personal information. M is man, and W is woman.\\
+Realname keeps user’s real name. It is usr’s personal information.\\
+BDate keeps user’s birthday date. It is user’s personal information.\\
+Username keeps user’s username. It is user’s personal information. And it is nickname on the application.\\
+Pic keeps user’s picture file name. It is user’s personal information. It is set default is 0.\\
+Token keeps user’s IM server token. Every user has different token. It is unique. It helps the user connection.\\
+Timetable keeps use’s boolean value that user added timetable. If user already add timetable, the value 1. If user not add timetable, the value is 0. The default value is 0. 
+
+%%%%%%%%%%%Class Table
+\subsubsection{ClassTable}
+\begin{table}[ht]
+\begin{center}
+\centering
+\label{my-label}
+\begin{tabular}{|c|c|c|}
+ \hline
+Name & Type & Extra \\ 
+ \hline
+ Cid   & int(11)    & Key,Auto increment\\
+ Cname & varchar(45)&\\
+ Ccode & varchar(7) &\\
+ Year  & varchar(45)&\\
+ \hline
+ \end{tabular}
+\end{center}
+\caption{ClassTable}
+\end{table}
+The table is store class’s detail information.\\
+Cid is Key on the table. It is unique on the table. Project search all classes information by Cid. It is auto to increment. \\
+Cname keeps class’s name. It is class’s detail information. Such as (PL10621 NAME IS French written and spoken language 1) .\\
+Ccode keeps class’ s University of Bath class ID. It is class’s detail information(Such as PL10621).\\  
+Year keeps the class’s year. It is class’s detail information. Such as(2015-2015).\\
+
+%%%%%%%%%%%TakeClass Table
+\subsubsection{TakeClass Table}
+\begin{table}[ht]
+\begin{center}
+\centering
+\label{my-label}
+\begin{tabular}{|c|c|c|}
+ \hline
+Name & Type & Extra \\ 
+ \hline
+ idTakeClass &int(11)& Key,Auto increment\\
+ uid         &int(11)& UserTable uid \\
+ cid         & int(11)& ClassTable cid \\
+ \hline
+ \end{tabular}
+\end{center}
+\caption{ TakeClass Table}
+\end{table}
+The table is store user and class relationship. User id and Class id group is the unique key on the table. It is auto to increment\\
+idTakeClass is unique key on the table. Project search the relationship by idTakeClass.\\
+uid keeps who take this class. The uid is added references on the User table’s Uid.\\
+cid keeps class’s cid. The cid is added references on the Class table’s Cid.\\
+
+
+%%%%%%%%%%%ClassComment Table
+\subsubsection{ClassComment}
+\begin{table}[ht]
+\begin{center}
+\centering
+\label{my-label}
+\begin{tabular}{|c|c|c|}
+ \hline
+Name & Type & Extra \\ 
+ \hline
+ idClassComment & int(10) & Key,Auto increment\\
+ uid            & int(11) & UserTable uid \\
+ cid            & int(11) & ClassTable cid\\
+ Comment        & text    &\\
+ \hline
+ \end{tabular}
+\end{center}
+\caption{ ClassComment Table}
+\end{table}
+The table is store class’s comment detail information.\\
+idClassComment is unique key on the table. Project search one comment by idClassComment. It is auto to increment\\
+uid keeps who post the comment. The uid is added references on the User table’s Uid.\\
+cid keeps class’s cid. The cid is added references on the Class table’s Cid.\\
+Comment keeps the comment’s content. It is comment’s detail information.\\
+
+%%%%%%%%%%%Ument Table
+\subsubsection{Ument Table}
+\begin{table}[ht]
+\begin{center}
+\centering
+\label{my-label}
+\begin{tabular}{|c|c|c|}
+ \hline
+Name & Type & Extra \\ 
+ \hline
+ idUment & int(10)       & Key,auto increment \\
+ uid     & int(11)       & UserTable uid \\
+ content & text          &\\
+ pic     & varchar(1024) &\\
+ date    & date          &\\
+ \hline
+ \end{tabular}
+\end{center}
+\caption{ Ument Table}
+\end{table}
+The table is store social media ument’s detail information. \\
+idUment is unique key on the table. Project search the ument by idUment. It is auto to increment\\
+uid keeps who post the Ument. The uid is added references on the User table’s Uid.\\
+content keeps Ument’s content. It is Ument detail information.\\
+pic keeps Ument’s picture file. It is Ument detail information. If the Ument do not have picture the value is 0.\\
+date keep when post this Ument. It is Ument detail information.\\
+
+%%%%%%%%%%%UmentComment Table
+\subsubsection{UmentComment Table}
+\begin{table}[ht]
+\begin{center}
+\centering
+\label{my-label}
+\begin{tabular}{|c|c|c|}
+ \hline
+Name & Type & Extra \\ 
+ \hline
+ idUmentComment  & int(11) & Key, auto increment\\
+  uid            & int(11) & UserTable uid\\
+  umentid        & int(11) & Umenttable idUment\\
+  comment        & text   &\\
+ \hline
+ \end{tabular}
+\end{center}
+\caption{ UmentComment Table}
+\end{table}
+The table is store Ument’s comment detail information.\\
+idUmentComment  is unique key on the table. Project search the Ument comment by idUmentComment. It is auto to increment\\
+umentid keeps which ument is added comment. The umentid is added references on the Ument table’s idUment.\\
+uid keeps who post the ument comment. The uid is added references on the User table’s Uid.\\
+Comment keeps the comment’s content. It is UmentComment’s detail information.\\
+
+%%%%%%%%%%%UmentLike Table
+\subsubsection{UmentLike Table}
+\begin{table}[ht]
+\centering
+\label{my-label}
+\begin{tabular}{|c|c|c|}
+ \hline
+Name & Type & Extra \\ 
+ \hline
+ idUmentComment  & int(11) & Key, auto increment\\
+  uid            & int(11) & UserTable uid\\
+  umentid        & int(11) & Umenttable idUment\\
+ \hline
+ \end{tabular}
+\caption{ UmentLike Table}
+\end{table}
+The table is to recored who like this Ument.
+idUmentLike is unique key on the table. Project search the UmentLike comment by idUmentLike. It is auto to increment\\
+uid keeps who like this Ument. The uid is added references on the User table’s Uid.\\
+umentid keeps which ument is added Like. The umentid is added references on the Ument table’s idUment.\
+
+\section {Interface Design}
+\subsection{Components}
+-Background: Login, Register(Graduate Color), Other (UiColor:White)\\
+-Button:UI Button\\
+-Picture:UI Picture(AfImageHelper)\\
+-Navigation Bar: Navigation Controller\\
+-Tab Bar:Tab Bar Controller\\
+-TableView:Table View Controller(ZZRefresh)\\
+-TableView Table View Cell\\
+-Input Field: Text Field\\
+-Word: Label\\
+\subsection{View Design }
+\subsection{Storyboard Design}
+\begin{figure}[ht]
+  \centering
+    \includegraphics[width=1\linewidth]{images/StoryBoradDesign.png}
+    \caption{
+          StoryBoradDesign }
+\end{figure}
+Storyboard is the Xcode main feature to help build GUI and interaction.  A storyboard is a visual representation of the user interface of an iOS application, showing screens of content and the connections between those screens.[Safety And health inspection checklist for iOS application]. The Storyboard design shows all page’s different relationship. All interaction with pages is design use the button. On the storyboard design, it has fives layers. On the top layer(4 layers) is login and register. If the user does not login, the application starts this layer. The user uses the login button or finishes register to enter next layer (3 layer).  The third layer is tab bar layer. A tab bar appears at the bottom of an app screen and provides the ability to quickly switch between different sections of an app. [Developer]. If the user already login, our application implementation the auto login. The application starts here. The two layer shows the primary feature(Timetable, Ument, Message, Me). All major feature is on the same level. The user can use the bottom tab bar to switch it. The first layer is secondary features. The first layer shows all secondary feature’s interaction. 
+
+%%
+%% Implementation and Testing
+%%
+%%
+\chapter{Implementation and Testing}
+\section{Server}
+\subsection{Install Server And Mysql}
+I rent Alibaba Cloud as the project’s Server. The Alibaba Cloud meet all the project’s requirements. The server system is Linux. The website address is 47.88.189.123.Alibaba Cloud Server (ECS) is an online cloud computing services to provide a reliable, scalable and distributed according to the needs of a given cloud computing capabilities. Alibaba Cloud ECS server is called "instance", gives you complete control over your cloud computing environment and help you achieve automation and real-time to meet your business needs.[Alibaba]. The requirement and design need the server to install the PHP as the server’s API and install the Mysql to the database. I install the LAMP(Linux Apache MySQL PHP). LAMP is a proven, efficient set of software that works well as a system.The open architecture of each of these elements allows for smooth and seamless integration with one another and result in a powerful combination.[Setting up LAMP: Getting Linux, Apache, MySQL, and PHP Working Together]
+
+\lstset{numbers=left, numberstyle=\tiny, stepnumber=2, numbersep=5pt}
+\begin{lstlisting}[breaklines,breakatwhitespace,caption={LAMP Command Line},label=LAMP Command Line,frame=lines]
+//install apache2 
+sudo apt-get update
+sudo apt-get install apache2
+//install mysql
+sudo apt-get install mysql-server php5-mysql
+//install php
+sudo apt-get install php5 libapache2-mod-php5 php5-mcrypt php5-curl php5-imagick php5-cli
+\end{lstlisting}
+ \begin{figure}[ht]
+  \centering
+    \includegraphics[width=1\linewidth]{images/server_runing.png}
+    \caption{
+           Server Information}
+\end{figure}
+ \begin{figure}[ht]
+  \centering
+    \includegraphics[width=1\linewidth]{images/php_mysql.png}
+    \caption{
+           PHP and Mysql Version}
+\end{figure}
+\subsection {Mysql Tables}
+The project creates Mysql table store information by software design. It creates eighth tables.
+\begin{lstlisting}[breaklines,breakatwhitespace,caption={Create Mysql Table},label=Create Mysql Table,frame=lines]
+\\Class Table
+CREATE TABLE `Bath_Inclass`.`Class` (
+  `Cid` INT NOT NULL AUTO_INCREMENT,
+  `Cname` VARCHAR(45) BINARY NULL,
+  `Ccode` VARCHAR(7) NULL,
+  `Year` VARCHAR(45) NULL,
+  PRIMARY KEY (`Cid`),
+  UNIQUE INDEX `Cid_UNIQUE` (`Cid` ASC));
+\\ Year Table
+CREATE TABLE `Bath_Inclass`.`Year` (
+  `idYear` INT NOT NULL,
+  `Start` VARCHAR(45) NULL,
+  `End` VARCHAR(45) NULL,
+  `Year` VARCHAR(45) NULL,
+  PRIMARY KEY (`idYear`));
+  
+\\TakeClass Table
+CREATE TABLE `Bath_Inclass`.`TakeClass` (
+  `idTakeClass` AUTO_INCREMENT,
+  `uid` INT NOT NULL,
+  `cid` INT NOT NULL,
+  PRIMARY KEY (`idTakeClass`),
+FOREIGN KEY (`uid`) REFERENCES `User` (`Uid`)  ON DELETE CASCADE,
+FOREIGN KEY (`cid`) REFERENCES `Class` (`Cid`)  ON DELETE CASCADE,
+Unique Key(‘uid’,’cid’);
+
+\\ClassComment Table
+CREATE TABLE `Bath_Inclass`.`ClassComment` (
+  `idClassComment` AUTO_INCREMENT,
+  `uid` INT NULL,
+  `cid` INT NULL,
+  `Comment` TEXT NOT NULL,
+  PRIMARY KEY (`idClassComment`),
+FOREIGN KEY (`uid`) REFERENCES `User` (`Uid`)  ON DELETE CASCADE,
+FOREIGN KEY (`cid`) REFERENCES `Class` (`Cid`)  ON DELETE CASCADE);
+
+\\Ument Table
+CREATE TABLE `Bath_Inclass`.`Ument` (
+  `idUment` INT AUTO_INCREMENT,
+  `uid` INT NULL,
+  `content` TEXT NULL,
+  `date`DATE NULL,
+  `pic` VARCHAR(1024) NOT NULL DEFAULT 0,
+FOREIGN KEY (`uid`) REFERENCES `User` (`Uid`)  ON DELETE CASCADE,
+  PRIMARY KEY (`idUment`));
+  
+\\UmentLike Table
+CREATE TABLE `Bath_Inclass`.`UmentLike` (
+  `idUmentLike` INT NOT NULL AUTO_INCREMENT,
+  `uid` INT NULL,
+  `umentid` INT NULL,
+FOREIGN KEY (`uid`) REFERENCES `User` (`Uid`)  ON DELETE CASCADE,
+FOREIGN KEY (`umentid`) REFERENCES `Ument` (`idUment`)  ON DELETE CASCADE,
+CONSTRAINT likeconstraint UNIQUE (uid,umentid),
+  PRIMARY KEY (`idUmentLike`));
+  
+\\UmentComment Table
+CREATE TABLE `Bath_Inclass`.`UmentComment` (
+  `idUmentComment` INT NOT NULL AUTO_INCREMENT,
+  `uid` INT NULL,
+  `umentid` INT NULL,
+  `comment` Text, 
+FOREIGN KEY (`uid`) REFERENCES `User` (`Uid`)  ON DELETE CASCADE,
+FOREIGN KEY (`umentid`) REFERENCES `Ument` (`idUment`)  ON DELETE CASCADE,
+  PRIMARY KEY (`idUmentComment`));
+
+\end{lstlisting}
+
+ \begin{figure}[ht]
+  \centering
+    \includegraphics[width=1\linewidth]{images/mysql_table.png}
+    \caption{
+           Mysql Table}
+\end{figure}
+
+
+\subsection {Web Crawlers}
+For the web crawlers, it is for to get the class unit ID, name, and class detail websites. We plan to use it to get all class information, then add to our server MySQL class table. University of Programme & Unit Catalogues website is display all class. The http://www.bath.ac.uk/catalogues/2016-2017/xx/XX-units.html is shown all class for the department. XX is the shorthand for the department. Such as CM means computer science department. The University of Bath has 17 departments. We use the Java program, and it uses WebCollector extend the library to store all information on local(TXT.file). WebCollector is an open source web crawler framework based on Java.It provides some simple interfaces for crawling the Web, you can setup a multi-threaded web crawler in less than 5 minutes.
+[WebCollector]. The JAVA code (NewsCrawler.java) is on the Appendices. The sources code is on the Code Folder, and the file name is BathInclass. 
+The main code is Visit page method. 
+
+\begin{lstlisting}[breaklines,breakatwhitespace,language=java,caption={NewsCrawler Visit method code},label=NewsCrawler Visit method code,frame=lines]
+
+@Override
+    /*
+     * it show get PH department all class(Department of Physics)
+     * Yu Shao
+     */
+    public void visit(Page page, CrawlDatums next) {
+        String url = page.getUrl();
+        /*if page is news page*/
+        if (page.matchUrl
+        ("http://www.bath.ac.uk/catalogues/2016-2017/ph/PH-units.html")) 
+        {
+            /*we use jsoup to parse page*/
+        	
+        	String fileName="/Users/yushao/Desktop/classdata/PH.txt";
+            try
+            {
+            		// build new file 
+                    BufferedWriter out=new BufferedWriter(new FileWriter(fileName));
+                    Document doc = page.getDoc();
+                    // read each table 
+                    Elements content = page.select("table>tbody>tr>td");
+                    for (int i = 0;i<content.size();i++)
+                    {
+                    	if(content.get(i).text().length()==7)
+                    	{
+                    	// if the element name is Modular, read next element. 
+                    	if(content.get(i).text().equals("Modular"))
+                    	{
+                    		
+                    		// Unit Id
+                        	out.write(content.get(i+1).text()+"	");
+                        	//Unit Name
+                        	out.write(content.get(i+2).text()+"	");
+                        	//Unit website
+                  out.write("http://www.bath.ac.uk/catalogues/2016-2017/"+
+	content.get(i).text().substring(0, 2).toLowerCase()+"/"+content.get(i+2).text()+".html"+"	");
+                        	//Unit Year
+                        	out.write("2016-2017");
+                        	out.write("\r\n");
+                        	i=i+2;
+                    	}
+                    	else
+                    	{
+			// Unit Id
+                    	out.write(content.get(i).text()+"	");
+			//Unit Name
+                    	out.write(content.get(i+1).text()+"	");
+			//Unit website
+                    	out.write("http://www.bath.ac.uk/catalogues/2016-2017/"+
+	content.get(i).text().substring(0, 2).toLowerCase()+"/"+content.get(i).text()+".html"+"	");
+                    	out.write("2016-2017");
+            
+                    	out.write("\r\n");
+                    	i=i+1;
+                    	}
+                    	}
+                    	
+                    }
+                    System.out.println("URL:\n" + url);
+                    //finish
+                    out.close();
+            } catch (IOException e)
+            {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+            }
+      
+
+        }
+    }
+
+\end{lstlisting}
+All class data is on the classdata folder. Each .txt file name is shorthand department name.\\
+Each class data is Unit Code	Unit Name Unit Website Year\\
+(French written and spoken language)\\
+PL10907	French written and spoken language 1A	http://www.bath.ac.uk/catalogues/2016-2017/pl/PL10907.html	2016-2017\\
+Then we use Mysql Workbench to add mysql query to load all class data to Server’s mysql class table.
+
+\begin{lstlisting}[breaklines,breakatwhitespace,caption={Load mysql},label=Mysql_Load code,frame=lines]
+// it shows add ME department class data to Mysql table
+LOAD DATA LOCAL INFILE '/Users/yushao/Desktop/classdata/ME.txt'  
+INTO TABLE Class FIELDS TERMINATED BY '	' 
+LINES TERMINATED BY  '\r\n' (Ccode, Cname, Website,Year)
+\end{lstlisting}
+
+The all class information is in Mysql. The result is 1708 rows. 
+
+ \begin{figure}[ht]
+  \centering
+    \includegraphics[width=1\linewidth]{images/countclass.png}
+    \caption{
+           Count Class Table Result}
+\end{figure}
+
+\subsection{PHP Interfaces}
+
+The PHP files are the project’s Server and Mysql database interfaces. It is similar to the bridge between application and Server. It has Six files on the Server. (Index.php,Config.php,DB\_Functions.php,\\DB\_Connect.php,upload2.php,test.php)The all source code is in the Appendix code chapters. The Config.php is for set connection databases' values(Host Name, USER Name, Password, and Database). 
+
+\begin{lstlisting}[breaklines,breakatwhitespace,caption={PHP Config File},label=PHP Config File,frame=lines]
+<?php
+ 
+ // define all database value. 
+ define("DB_HOST", "localhost");
+ define("DB_USER", "root");
+ define("DB_PASSWORD", "shaoyu@1992");
+ define("DB_DATABASE", "Bath_Inclass");
+ 
+?>
+\end{lstlisting}
+
+DB connection is for help the PHP connection the Database. It includes construct, deconstructs, connection and close. 
+\begin{lstlisting}[breaklines,breakatwhitespace,caption={PHP DB_Connect File},language = php, label=PHP DB_Connect File,frame=lines]
+<?php
+ 
+class DB_Connect
+{
+    public $con;
+        function __construct()
+    {
+ 
+    }
+
+    function __destruct()
+    {
+        // $this->close();
+    }
+ 
+    //connection database 
+    public function connect()
+    {
+        require_once 'Config.php';
+        //connect mysql 
+        $this->con = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_DATABASE) or die(mysqli_error($this->con));
+        if (mysqli_connect_errno()) {
+            die("Database connection failed");
+        }
+ 
+        // return  database handler
+        return $this->con;
+    }
+ 
+    //close connection
+    public function close()
+    {
+        mysqli_close($this->con);
+    }
+ 
+}
+?>
+\end{lstlisting}
+
+The upload2 file is to receive upload file from the application. And the upload file will save the receiver files to the server.
+
+\begin{lstlisting}[breaklines,breakatwhitespace,caption={PHP Upload2 File},language = php, label=PHP Upload2 File,frame=lines]
+<?php
+
+move_uploaded_file($_FILES["file"]["tmp_name"],
+    $_SERVER["DOCUMENT_ROOT"]."/uploadFiles/" . $_FILES["file"]["name"]);
+?>
+\end{lstlisting}
+
+The Index file handles receive post request. It contains Post tag, and use the tag to the method to manage the request, and return data (JSON)to the application. The code has a lot of codes. All the source code is on the Appendix.
+
+\begin{lstlisting}[breaklines,breakatwhitespace,caption={PHP Index UserExisted method},language = php, label=PHP Index UserExisted method ,frame=lines]
+ <?php
+                   require_once "DB_Functions.php";
+                   $db = new DB_Functions(); 
+                   
+         if ($tag == 'isUserExisted') 
+            {
+                   $email=$_POST['email'];
+                   $response = array("tag" => $tag, "error" => FALSE);
+                   $check_user=$db->isUserExisted($email);
+
+                  if($check_user == TRUE)
+                   {
+                   $response["error"] = TRUE;
+                   echo json_encode($response);
+
+                   }
+                   else 
+                  {
+                        $response["error"] = FALSE;
+                        echo json_encode($response);
+
+                  }
+
+
+            }
+\end{lstlisting}
+
+DB function is to use query to get, add, edit or delete to manage the database. It need to use DB connection Connection the database. The code is on the Appendix.
+The Test file is to debug the PHP code. The Test file is on the Appendix.\\
+
+The PHP interfaces are not hard to implementation. The project uses the Sublime Text2 connection the server to write the code. The PHP interfaces are hard to check and find the bugs. We used the Firefox PHP debug plug-in to debug the PHP code. The project’s server’s interfaces all method by test use PHP submit from to check method’s correctness. It can make sure all method work excellent. And project’s happened errors be only on the application. It can improve the coding efficiency. 
+
+\section{IMServer}
+
+For the IMServer, the project use the RongCloud IM server to implementation. Different scenarios for developers required financial Rongcloud platform provides a range of products, technical solutions, including IM client components, IM client base library, Web SDK, server-side REST API and the like. Using these solutions, developers can build applications directly in their instant messaging product that can also be their creativity chat scene.[RongCloud] The RongCloud SDK development documents is http://www.rongcloud.cn/docs/.
+The SDK include the IMServer and IM interface. 
+
+\subsection{Install SDK}
+The project use the Cocopods to import the SDK. \\
+add pod “'RongCloudIMKit', ‘2.4.0’” to the project’s pod file \\
+Then run “pod install” code on the terminal. \\
+On the application code, it easy add “import UIKit” to use the SDK. \\
+
+\subsection{Use IMServer}
+On the AppDelegate.swift to connection the IMServer. The app delegate works alongside the app object to ensure your app interacts correctly with the system and with other apps. Specifically, the methods of the app delegate give you a chance to respond to necessary changes. [developer.apple]\\
+
+\begin{lstlisting}[breaklines,breakatwhitespace,caption={IMServer connection},language = swift, label=IMServer connection ,frame=lines]
+    
+    func connectIMServer(completion:()->Void,user_info:User)
+    {
+        
+        RCIM.sharedRCIM().initWithAppKey("pkfcgjstffr88")
+        RCIM.sharedRCIM().connectWithToken(user_info._Usertoken,
+            success: { (userId) -> Void in print(userId)
+        let currentUserInfo=RCUserInfo(userId:user_info._Usrid,name:user_info._Username,portrait: user_info._Pic)
+            RCIMClient.sharedRCIMClient().currentUserInfo=currentUserInfo
+            completion()
+            //print("successful")
+            },
+            error: { (status) -> Void in
+//                print("Error:\(status.rawValue)")
+            }, tokenIncorrect: {
+              
+        })
+    }
+\end{lstlisting}
+
+
+
+The Message list is implementation on the MessageViewViewController. And the Message room is implementation on the onSelectedTableRow method(MessageViewViewController).  TheMessageViewViewController overriding the IM SDK RCConversationListViewController class.\\
+
+\begin{lstlisting}[breaklines,breakatwhitespace,caption={IMServer Interface},language = swift, label=IMServer Interface ,frame=lines]
+   // set IM message list
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.setDisplayConversationTypes([RCConversationType.ConversationType_PRIVATE.rawValue,
+            RCConversationType.ConversationType_DISCUSSION.rawValue,
+            RCConversationType.ConversationType_CHATROOM.rawValue,
+            RCConversationType.ConversationType_GROUP.rawValue,
+            RCConversationType.ConversationType_APPSERVICE.rawValue,
+            RCConversationType.ConversationType_SYSTEM.rawValue])
+        self.setCollectionConversationType([RCConversationType.ConversationType_DISCUSSION.rawValue,
+            RCConversationType.ConversationType_GROUP.rawValue])
+        
+        self.refreshConversationTableViewIfNeeded()
+        
+        //self.conversationListDataSource
+        
+        
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+    // Set IM chat room 
+      override func onSelectedTableRow(conversationModelType: RCConversationModelType, conversationModel model: RCConversationModel!, atIndexPath indexPath: NSIndexPath!) {
+        let chat = RCConversationViewController()
+        //type of conversationType
+        chat.conversationType = RCConversationType.ConversationType_PRIVATE
+        chat.targetId = model.targetId
+        //Set title
+        chat.title = model.conversationTitle
+        let sum=self.getsum();
+        if(sum-model.unreadMessageCount>0)
+        {
+        self.tabBarController?.tabBar.items?[2].badgeValue = String(sum-model.unreadMessageCount);
+        }
+        else{
+            self.tabBarController?.tabBar.items?[2].badgeValue = nil;
+        }
+        //Display
+        
+        self.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(chat, animated: true)
+        self.hidesBottomBarWhenPushed = false
+        
+    }
+\end{lstlisting}
+
+\section {IOS Application}
+
+The project design is use the MVC model. The Application is order to implementation by Model-View-Controller. All code is use the swift language to write. All source code is on the USB’s Bath InClass folder. Or you can download from the Github website https://github.com/shaoyuspace/Inclass_Bath.
+\subsection{Data}
+Classes are a very important part of any Object Oriented language, and Swift is no exception. [codingexplorer]\\
+The data class files has the User, Class\_time, Overlapping Class, Ument, and ClassComment. 
+It is to help the hold the each class’s detail information. All the source  code is on the Appendix.
+\subsection{Model} 
+The model has two swift files that Database.swift and Localfiles.swift. Database file feature is to upload/download files and pictures. It uses the Alamfire open source Library to implementation it. To keep Alamofire focused specifically on core networking applications, additional component libraries have been created by the Alamofire Software Foundation to bring additional functionality to the Alamofire ecosystem.[Alamofire]. The database file has another feature is to connection Mysql. On the Design chapter, it shows figure the application how to connection the Mysql. It uses the PHP file as the bridge on the between application and Mysql. The database file uses NSURLConnection class to the connection it. Below, it will show two pieces code for upload file and delete a user from MySQL. Localfiles.swift is to help the Model to save and get local files. It is use the NSFileManager to implementation it. It is easy to load local file to transfer to the Controller.  And all Database.swift and Localfiles.swift code is on the Appendix .
+
+\begin{lstlisting}[breaklines,breakatwhitespace,caption={Model Database Code},language = swift, label=Model Database Code ,frame=lines]
+    // upload file
+    static func upload(filename: String)
+    {
+        let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true) as NSArray
+        let documentsDirectory = paths.objectAtIndex(0) as! NSString
+        let path = documentsDirectory.stringByAppendingPathComponent(filename)
+        let fileURL:NSURL = NSURL.init(fileURLWithPath: path)
+        
+        
+        Alamofire.upload(
+            .POST,
+            "http://47.88.189.123/upload2.php",
+            multipartFormData: { multipartFormData in
+                
+                multipartFormData.appendBodyPart(fileURL: fileURL, name: "file")
+            },
+            encodingCompletion: { encodingResult in
+                print("file is alraldy to upload")
+                switch encodingResult {
+                case .Success(let upload, _, _):
+                    upload.responseString { response in
+                        print(response)
+                    }
+                case .Failure(let encodingError):
+                    print(encodingError)
+                }
+            }
+        )
+
+    }
+    // delete user from the mysql
+    
+    static func delete(uid: String)
+    {
+        var response: NSURLResponse?
+        let request = NSMutableURLRequest(URL: NSURL(string: "http://47.88.189.123/Index.php")!)
+        request.HTTPMethod = "POST"
+        var body = "tag=delete&uid=\(uid)"
+        //print(body);
+        let postData = body.dataUsingEncoding(NSUTF8StringEncoding)
+        request.HTTPBody = postData
+        try? NSURLConnection.sendSynchronousRequest(request,returningResponse: &response)
+    }
+
+\end{lstlisting}
+
+
+\begin{lstlisting}[breaklines,breakatwhitespace,caption={Model Local files load code},language = swift, label=Model Local files load ,frame=lines]
+    static func  loadData(filename:String)-> [Class_Time] {
+        //get local files
+        var classtime = [Class_Time]()
+        let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true) as NSArray
+        let documentsDirectory = paths.objectAtIndex(0) as! NSString
+        let path = documentsDirectory.stringByAppendingPathComponent("\(filename).plist")
+        let  defaultManager =  NSFileManager ()
+        if  defaultManager.fileExistsAtPath(path) {
+            //Read Data
+            let  data =  NSData (contentsOfFile: path)
+            //decoding
+            let  unarchiver =  NSKeyedUnarchiver (forReadingWithData: data!)
+            //Checklist lists
+             classtime = unarchiver.decodeObjectForKey( "classtimeList" )as! [Class_Time]
+            //end decoding
+            
+            unarchiver.finishDecoding()
+            return classtime;
+        }
+        else
+        {
+            return
+            classtime
+        }
+    }
+
+\end{lstlisting}
+\subsection{View}
+Login page, Register page, Timetable Page, Ument Page, Message Page, Personal Page, Add Class page, Class Page, Ument detail page, Ument post page, Class\_comment List, Classmates List, Ument List Page, Class List Page\\
+
+
+The View implementation is to use the Xcode Storyboard to implementation. It adds the View table, Button, Label, Edit Text on the View. It used the Xcode auto layout to set layout(x,y, height, width) because of it can suit for different size iPhone screen.  All view is shows on the source code Main.Storyboard.
+The application uses the Storyboard to add the navigation on the top. And it adds the Tab bar on the bottom.\\
+
+The login page is accessible to implementation, it just to show login e-mail and password.And it also has login button and Register button. 
+
+The Register page has two pages. One is for E-mail and password, and next button. Next page shows more information and login button. 
+
+On the Timetable page, the class button has used the code to dynamic addition. The different class time uses the code to get time layout on various time. Each day has 13 cells to show the time slot(7:00 to 20:00) because Bath University class is from 7:15 to 19:15. Each hour is one cell. Such as 7:15 to 8:15 is in the first cell. The width is to show each day. Because our project’s timetable is week table, the width shows the weekday. Such as The Monday class is of the first width. When we test our project, we find a lot of student class timetable has different class is at the same time. We merge the same time class to one button, and use can use the dialogue picker to choose a class. The timetable also adds the timeline; it is a red line on the screen to show the current time. It starts 7:15, and end 20:00.
+
+Ument page uses UItableview. The UItableview cell also uses the code to dynamic addition. The page code uses UITableViewDelegate, UITableViewDataSource to change each cell pictures and content. Each cell has Like Button and Comment Button (UIbutton).
+
+The Message is used the IM server UI. More details on the Use IMServer section. 
+
+The Personal page is an implementation to show user’s information.(Picture, Name, Username, Email, Class list, Ument List, and logout Button). The other user information page is similar this one, but it delete the logout button, and it adds the chat button. 
+
+The Class page inserts the labels to show class information and List classmates' picture(UIImage) and name(UILable) on here. Here has table view(UItableview) to show the class comments. 
+Ument Detail Page implement to use the Storyboard to add the UILabel to show content. And UIImage to show the Ument’s picture. 
+
+AddClass Page uses UIedit to enter the user’s Bath id. and UI Button is below it.
+
+Ument Post Page is UI edit to enter the Ument’s content. and post button is below it. 
+
+Class\_comment List, Classmates List, Class List Page Use the same page, it use the UItabelview to show each content. The different page is changed different labels and contents.
+Ument List Page is using the Ument page, it only shows the User’s post-Ument. 
+
+
+
+\subsection{Controller}
+
+\subsection{Implementation Difficult}
+The project is a massive and integration project, so the implementation is not easy. We use Swift for application; PHP is for Server’s API, Mysql for Database, Java for Crawlers. We also meet a lot of difficult. First, Swift is a new language; Swift language different version has significant changes. We use few library, and we have to handle the Compatibility Issues. Second, Our project is integration project. The project test or truck bugs is hard. If the project happened crash or bugs, We have to check application, Server, Or Mysql Database. Then, the multi-thread is the big challenge for us. Because our project’s application use the multi-thread to apply the web request or download/upload files, we solve the multi-thread problems using long times. Last is the timetable GUI implementation. The timetable feature also is a big challenge for us. We find some class have the same time; we merge the same class to one type button need NSDate compare, New class for store list for same time class, and reset GUI location.
+
+\section{System Test}
+
+\begin{table}[ht]
+\centering
+\label{my-label}
+ \begin{tabular}{|c|c|c|}
+ \hline
+Teat Stage & Status & Result\\
+\hline
+Uint Test & Finish & Fix Method's Bugs and Fault\\
+\hline
+Integration Test & Finish & Application without networking maybe happen crash\\
+\hline
+Beta Test & Process & \\
+\hline
+\end{tabular}
+\caption{Test Result}
+\end{table}
+Software testing is the process of analyzing a software item to detect the differences
+between existing and required conditions (that is, bugs) and to evaluate the features of
+the software item[IEEE].For the system testing, the project has three stages for our system.\\ 
+The first stage is use case testing. When the project is finish one use case, we do the individual testing. The individual testing uses the black\-box and white\-box to test it. The white box is a clear test. It also called Unit testing is the testing of individual hardware or software units or groups of related units.[IEEE] Our project is testing each method. Such as the project use the Xcode Playground to test each method and to check the result. The test has another purpose check the method’s loop and branch Because the loop and branch logic can make the application is a breakdown. Then use case needs to do the black-box test.The black\-box checks the function without any crash. The tester does not look any source code. The tester each use case enter input and compare the output. Use case’s black-box test is an individual test. The test is playing on the application or Server. The test did not do the Application and Server interaction. We use the Xcode Virtual iPhone device to test it.\\
+The second stage is integration testing. The integration also uses the Black\-Box. The test is check any application crash. The integration test is testing whole the project includes application server. The purpose is for test the connection between application and server. Or it tests the connection between application and application. The test needs two or more devices. We use one Virtual iPhone device on the Xcode, and we use another real iPhone Virtual to test it.\\
+The last stage is the Beta test.When an advanced partial or full version of a software package is available, the development organization can offer it free to one or more
+potential users or beta testers. These users install the software and use it as they wish,
+with the understanding that they will report any errors revealed during usage back to the
+development organization. These users are usually chosen because they are experienced
+users of prior versions or competitive products. [Testing Overview and Black-Box Testing Techniques ]. We put our download package is on the website. The website is url{http://47.88.189.123/download}The project invited ten or more user to download the application and to get a response for any bugs or fault. 
+\begin{figure}[ht]
+  \centering
+    \includegraphics[width=1\linewidth]{images/test111.png}
+    \caption{
+          Integration testing Real Device vs Virtual Device }
+\end{figure}
+
+
+\chapter{Results}
+This is the chapter in which you review the outcomes, and
+critique the outcomes process.  You may include user evaluation here
+too.
+\section{Mysql Check}
+The project use php page as interface to show Mysql table. \\The address is url{http://47.88.189.123/showtable.php}. The webpage shows Mysql table cell. 
+\begin{figure}[ht]
+  \centering
+    \includegraphics[width=1\linewidth]{images/Result_mysql.png}
+    \caption{
+          Show table website Screenshot  }
+\end{figure}
+\section{Screenshot}
+
+
+%%
+%% Now we are back to the standard project contents that you should include
+%%
+
+\chapter{Conclusions and Feature Work}
+%% Uncomment this to include a separate tex file wih the conclusion contents
+%\include{conclusion.tex}
+\section{Conclusions}
+In chapter two, We did the Literature review for the Project. On this chapter, we dissection why the application is helpful on campus. On the Any Meeting Mobile Application System for Investigating Students Interaction review, this literature is given our good case to show application helps the student on meeting on Mobile. It is same the project’s motivation want to use the mobile application to help students studying or life. Another literature review shows application play a major role in the Campus Social media. Use of Social Media to Support Learning in Universities give our more case why the campus needs the social media application. The Literature give an example to prove why a student can not leave social media application on campus. It helps the project to design the application’s social media feature. Users of the world, unite! The challenges and opportunities of Social Media show the social media faces challenges and opportunities. On this Literature review give more ideas to design the campus social media feature. It gives our five points to design the social media: be active, be interesting, be humble, be unprofessional, be honest. On the literature review, we still did reviews for the development application. PSiOS: Bring Your Own Privacy Security to iOS Devices introduction the iOS system and iOS security. It is very easy to see the iOS system how to work. The article Smart smartphone development: iOS versus Android is compared iOS and Android system. We compare two system, and we refer to the comments for system. Finally we choose use iOS as our project’s application system. And we use the Swift language to finish it. But we use some C-object library to this project. On the Requirements analysis use project’s motivation and goal to do interviews and survey to know students what feature need.  Our project interview 8 students and get 26 response for survey. Based the interviews results and survey responses, our projects set features. On this section, we also compare other similar website and application. We get our project’s strengths and weakness. We also design the use case and draw prototypes for application. We set our feature in the requirements specification. It is guide to design the project. We explain the description for each features on this section. Design chapter describes architecture design, data design, interface design, and design pattern. On the architecture design describes each feature is how to working. And the Server and Application is how to work. The project’s design pattern uses the MVC model. The reason behind this is to ensure that critical parts of the application could be portable and stable during events like platform updates or changes to XCode or the changes in project environments. [CashTag iOS Application]. The data design is for the Mysql each table design. Interface design is for the application GUI. On the storyboard deign, we describe each feature how to interactive. The Implementation chapter is describe the project’s how to implementation. The coding is based on the requirement chapter and design chapter. We introduction Sever, IM Server, and application how to coding. On this chapter, we shows some important method code or results.  The difficult section shows we feel challenge and difficult on the implementation.The testing charter is describe tester how to test the project. The test has three stages test.(Unit test, Integration test, and Beta test). All project’s coding file is on the USB folder. and all Server’s code shows on the appendix.\\
+Finally, I learned a lot of things on this project. The project’s idea is from my real experience. The motivation is to help the international student make more friends from classmates. From this project, I know how to make the idea to the real product even I meet a lot challenges. We hope more international students use our project application, and we hope they can get more bits of help from this project application. The download address is url{http://47.88.189.123/download}
+
+\section{Critical Evaluation}
+
+\section{Feature Work}
+
+VERSION 1.0.\\
+The IOS application is still at the Apple store examine. The user can not download from iTunes. However, we import the project to IPA file to our website.(The IPA add Signature By Company account). So the first thing is to publish project to iTunes soon. Then we do not have enough time to finish the add personal time event feature and add Ument event to the personal timetable.The version 2.0 need to add two features. Version 1.0 only implementation the features. And we add some simple GUI. On the version 2.0, we will make more professional GUI on this iOS application. We will create new features or fix bugs from user’s responses. 
+
+
+\appendix
+
+%%
+%% Use the appendix for major chunks of detailed work, such as these. Tailor
+%% these to your own requirements
+%%
+\chapter{User Interviews and Survey}
+\section{User Interviews }
+For this interview, we interview eight students. Nigh students are currently international University of Bath students. One student is pre University of Bath student. Each interview is about 5 minutes. And interview’s purpose is about campus social networking and international students studying. Below is our interviewer detail\\
+1.\\
+Sun Haoxiang Msc computer science University of Bath\\
+Q is our question. S: Sun Haoxiang\\
+Q:how long are you on UK studying?\\
+S: This is my first year on here.\\
+Q:Ok, what is the biggest problem studying here?\\
+S:I think language still is my problem. But i will try to solve it soon.\\
+Q: what is best way to solve it?\\
+S: i think the best way is to make new Uk student friend. and i should attend more campus activity.\\
+Q: what is problem to make new friend or attend campus activity?\\
+S:  i do not have more information about campus activity. Sometimes, i always missed it. And i only have some connection with classmates on class. We do not have much talking after class. i think this two biggest problem for me. \\
+2.\\
+Huang Zechun Undergraduate Mathematic University of Bath\\
+Q is our question. H is Huang Zechun\\
+Q: Hello, ZeChun, are you fresh student on here?\\
+H: Yes, this is my first year on here. But i have 2 years on Uk high school.\\
+Q: OK, what is different High school and University of Bath.\\
+H: i think most thing is similar. But here is more freedom for me. And i think classmates is different for different lecture. this is big problem for me.\\
+Q: why is different classmates on different lecture is problem for you?\\
+H: Sometimes, i met studying problem is hard to find classmates to discuss.\\
+Q: You can use University Moodle’s disuse page to do it. Why are you did not to use it ?\\
+H: Moodle is more official. Most student and me do not like to use it. I see most students like to discuss on some social media (such as Facebook, skype). \\
+Q:Do you want to make new friend on class?\\
+H: Yes, of course, i think it can help my studying. You know, make new friend is not easy thing for international student.\\
+3.\\
+Pei Shuai Msc Human Resources University of Bath\\
+Q is our question P is Pei Shuai\\
+Q: Hello, Shuai, how long are you been here?\\
+P: This is my first year on Uk. But i got my undergraduate on Us. So i stay about  four years on overseas.\\
+Q: How do you feel study here?\\
+P: Almost good. I enjoy to study here.\\
+Q: l what is inconvenience on campus for you?\\
+P: Yes. i think our timetable is not convenience. I always make mistake or forger to classroom. i need to check it to website. and i think it need to change it. \\
+Q: Ok. i want to design one application that have timetable feature. Do you have any idea or advices to about it?\\
+P: Sure, i think it is a good idea. For my opinion, i think the correctness is first. And i hope i can add my personal timetable to here. it should be more convenience.\\
+Q: Thanks for your idea and advices.\\
+4.\\
+Kong Jingyu Undergraduate Mathematic University of Bath\\
+Q is our question K is Kong Jingyu \\
+Q: Hello, Kong, Are you fresh student on Bath?\\
+K: Yes, i am freshman on University of Bath.\\
+Q: Have you meet any challenge on here?\\
+K: Of course, for any international student, making friends and language always challenge for here.
+and i like to make friends to adapt the new environment.\\
+Q: Have you make more classmates to become your friends?\\
+K: Sure, i have some friends from class. But they are all come my same country. i can not make local friends. it is hard for me.\\
+Q:i plan make new application, it can help you make new friends. Do you have any ideas about it ?\\
+K: i think it is good idea or good application for me. i hope to use it to make more friends. it is not on my class. i hope make more friends who have same hobbies to me. \\
+Q: Thanks. i think our application have the feature. \\
+5.\\
+Wang Zi Undergraduate Economy University of Bath\\
+Q is our question W is Wang Zi\\
+Q: Hello, Wang. I want to make new application to help international student to study here. And i want to interview you and get some ideas.\\
+W: Sure. i think it can help my studying.\\
+Q: What is big problem on your studying?\\
+W: I feel almost good because i studying high school on Uk. I want to make discus with my classmates when i met some question. it is hard to find classmates to help me.\\
+Q: Why do you not use moodle to send message to them? \\
+W: i try to send message to him. But i did not get any message back. \\
+Q: Why are they do not like use Moodle?\\
+W: I think it is inconvenience. Everyone like to use App to chat. and Moodle need to login to website or E-mail chat. it is not good.\\
+6.\\
+Piao Xuelin Undergraduate Mathematic University of Bath\\
+Q is our question P is Piao Xuelin\\
+Q:Hello, Piao. How long are you been here?\\
+P:I am an freshman on University of Bath.\\
+Q: As international student, do you have some problems on your studying or life?\\
+P: i think most international student have feel lonely before. and it also include me. \\
+Q: Are you still feel lonely now? and do you have some ides to overcome it?\\
+P: I am homesick student. So it is still as problem for me. But i think make more friends and attend more activities are good for it. \\
+Q: Do you have friends on Bath campus?\\
+P:Sure, i have some friends who are from China. and I want to make more Uk or other counties friends. i think it can help me learn more cultures.\\
+Q:What is biggest problem to connection other counties friends? \\
+P:i think it is too little talking. \\
+Q:Do you have some ideas for make friends application?\\
+P: i think chat feature is very important. Taking or chat is good for make new friends.\\
+7.\\
+Wan Fan Pre-Master University of Bath\\
+Q is our question Q is Wan Fan\\
+Q:hello, when do you will go to University of Bath.\\
+W:I will enter school this year.\\
+Q:Ok, welcome to University of Bath. and i hope you will have good time on Bath. Do you have some worries before to school?\\
+W: I do not have any friend on Bath. i hope i can make new friends on Bath. \\
+Q:Do you have other worries?\\
+W:i do not know choose which class. and i hope i can get more information about my class.\\
+Q:I am developing one application to help international student build social networking and studying. i think it can solve your worries.\\
+8.\\
+Wang Xindan Msc computer science University of Bath \\
+Q is our question W is Wang Xindan\\
+Q: Hello, Xindan. As Msc computer science student, do you have some ideas to develop application for international  student?\\
+W:As an user, i think the application should be easy to using. It can let more students using it.\\
+Q:Do you have some ideas for features. \\
+W:i know your main features. it is very good. and i will using it. But i think you should design good interaction. Interaction can make all features become together. and it also can make more international or Uk students to using it.\\
+Q: thanks for your advices. and do you have other advices for application?\\
+W: I think data is also important, such as real class data and huge user’s data can make more users to it. 
+\section{Interview Results}
+\begin{figure}[ht]
+  \centering
+    \includegraphics[width=.5\linewidth]{images/survey_result.png}
+    \caption{
+           InterviewResult}
+\end{figure}
+
+
+\chapter{Design Diagrams}
+
+\chapter{User Documentation}
+
+\chapter{Raw results output}
+
+\chapter{Code}
+
+%%
+%% NOTE that for this to typeset correctly, ensure you use the pdflatex
+%%      command in preference to the latex command.  If you do not have
+%%      the pdflatex command, you will need to remove the landscape and
+%%      multicols tags and just make do with single column listing output
+%%
+\bibliography{baththesis}
+
+
+
+\begin{landscape}
+\begin{multicols}{2}
+\section{File: yourCodeFile.java}
+\lstinputlisting[basicstyle=\scriptsize]{yourCodeFile.java}
+\end{multicols}
+\end{landscape}
+
+\end{document}
